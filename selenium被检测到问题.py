@@ -44,10 +44,7 @@ async def main(username, pwd, url):
 
     url = "https://www.tcpjw.com/"
 
-    headers = {
-        # Cookie值从登录后的浏览器，拷贝，方法文章上面有介绍
-        "Cookie": await get_cookie(page)
-    }
+
 
     response = requests(url=url, headers=headers)
 
@@ -66,7 +63,7 @@ async def get_cookie(page):
         str_cookie = '{0}={1};'
         str_cookie = str_cookie.format(cookie.get('name'), cookie.get('value'))
         cookies += str_cookie
-    # print(cookie)
+    print(cookie)
     return cookies
 
 

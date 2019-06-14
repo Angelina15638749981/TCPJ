@@ -7,37 +7,111 @@ from pymongo import MongoClient
 import random
 import datetime
 from fake_useragent import UserAgent
+import datetime
+import sys
+import time
+import hashlib
+
+
+# 方法1
 # 实例化 UserAgent 类
 ua = UserAgent()
-import datetime
+
+# 方法2
+user_agents = [
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
+    "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",
+    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6",
+    "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5",
+    "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
+    "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
+    "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10",
+    "Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8",
+    "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5",
+    "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.1.17) Gecko/20110123 (like Firefox/3.x) SeaMonkey/2.0.12",
+    "Mozilla/5.0 (Windows NT 5.2; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 SeaMonkey/2.7.1",
+    "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-US) AppleWebKit/532.8 (KHTML, like Gecko) Chrome/4.0.302.2 Safari/532.8",
+    "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.464.0 Safari/534.3",
+    "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.15 Safari/534.13",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.54 Safari/535.2",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.36 Safari/535.7",
+    "Mozilla/5.0 (Macintosh; U; Mac OS X Mach-O; en-US; rv:2.0a) Gecko/20040614 Firefox/3.0.0 ",
+    "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3",
+    "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1) Gecko/20090624 Firefox/3.5",
+    "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.14) Gecko/20110218 AlexaToolbar/alxf-2.0 Firefox/3.6.14",
+    "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.2.15) Gecko/20110303 Firefox/3.6.15",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0.1) Gecko/20100101 Firefox/4.0.1"
+             ]
+
+user_agents = random.choice(user_agents)
 
 nowTime = datetime.datetime.now().strftime('%Y_%m_%d')  # 现在
 
-with open(r"C:\Users\admin\Desktop\scrapy_xici-master\xici\xici\ips_%s.txt" % nowTime) as f:
-    content_list = f.readlines()
-    ip_pool = [x.strip() for x in content_list]
+# 选代理
+# with open(r"C:\Users\admin\Desktop\scrapy_xici-master\xici\xici\ips_%s.txt" % nowTime) as f:
+#     content_list = f.readlines()
+#     ip_pool = [x.strip() for x in content_list]
+
+# def ip_proxy():
+#     proxies = {
+#         ip_pool[-1].split(":")[0]: ip_pool[-1]
+#     }
+#     return proxies
 
 
-def ip_proxy():
-    proxies = {
-        ip_pool[-1].split(":")[0]: ip_pool[-1]
-    }
-    return proxies
-
+# 代理IP
+_version = sys.version_info
+is_python3 = (_version[0] == 3)
+# http://api.xdaili.cn/xdaili-api//greatRecharge/getGreatIp?spiderId=6606fe923b0c4ba6819f9dca6b346ec7&orderno=YZ201961242327XYoay&returnType=2&count=20
+orderno = "ZF20196128635R5mccH"
+secret = "1e8b6d5b2e774e20b51d7af391a55e75"
+ip = "forward.xdaili.cn"
+port = "80"
+ip_port = ip + ":" + port
+timestamp = str(int(time.time()))                # 计算时间戳
+string = ""
+string = "orderno=" + orderno + "," + "secret=" + secret + "," + "timestamp=" + timestamp
+if is_python3:
+    string = string.encode()
+md5_string = hashlib.md5(string).hexdigest()                 # 计算sign
+sign = md5_string.upper()                              # 转换成大写
+print(sign)
+auth = "sign=" + sign + "&" + "orderno=" + orderno + "&" + "timestamp=" + timestamp
+print(auth)
+proxy = {"http": "http://" + ip_port, "https": "https://" + ip_port}
+headers = {"Proxy-Authorization": auth, "User-Agent": user_agents}
+print(headers)
 
 
 def get_wancheng_data_from_tcpj():
+    # 对应随即设置 方法1
+    # user_agents = ua.random
+    # headers 设置方法1
+    # headers = {"Proxy-Authorization": auth}
+    # headers = {
+    #     "User-Agent": headers}
 
-    # 随即设置
-    user_agents = ua.random
-    headers = {
-        "User-Agent": user_agents}
-
+    # headers设置方法2
+    # headers_ = {
+    #     "User-Agent": user_agents}
+    # print(user_agents)
     try:
         for j in range(1, 4):
-
-            response = requests.get(" https://www.tcpjw.com/OrderList/TradingCenter/", data={"pageIdx_client": "%s" % j, "pt_tradestatus": "22"},
-                                     headers=headers)
+            response = requests.get(" https://www.tcpjw.com/OrderList/TradingCenter/", data={"pageIdx_client": "%s" % j,"pt_tradestatus": "22"},
+                                     proxies=proxy, headers=headers, verify=False, allow_redirects=False)
             requests.adapters.DEFAULT_RETRIES = 5
             s = requests.session()
             s.keep_alive = False
@@ -48,14 +122,14 @@ def get_wancheng_data_from_tcpj():
             #                          headers=headers)
             print("--------------------爬取-交易完成-----第%s页数据-------------------------------------------------------------"%j)
             print(response.status_code)
-            # print(response.content)
+            print(response.text)
             # 判断请求状态 切换IP
             if response.status_code != 200:
-                ip_pool.pop()
+                # ip_pool.pop()
                 time.sleep(1)
                 response = requests.post(" https://www.tcpjw.com/OrderList/TradingCenter/",
                                          data={"pageIdx_client": "%s" % j, "pt_tradestatus": "22"},
-                                         headers=headers, proxies=ip_proxy())
+                                         headers=headers)
                 requests.adapters.DEFAULT_RETRIES = 5
                 s = requests.session()
                 s.keep_alive = False
@@ -242,27 +316,37 @@ def get_wancheng_data_from_tcpj():
 
 
 def get_full_data_from_tcpj():
-    # 随即设置
-    user_agents = ua.random
-    headers = {
-        "User-Agent": user_agents}
+    # 对应随即设置 方法1
+    # user_agents = ua.random
+    # headers 设置方法1
+    # headers = {"Proxy-Authorization": auth}
+    # headers = {
+    #     "User-Agent": headers}
+
+    # headers设置方法2
+    # headers_ = {
+    #     "Proxy-Authorization": auth,
+    #     "User-Agent": user_agents}
+    # print(user_agents)
 
     try:
         for j in range(1, 5):
             # https://www.tcpjw.com/OrderList/TradingCenter/?pageIdx_client=2
-            response = requests.get("https://www.tcpjw.com/OrderList/TradingCenter?pageIdx_client=%s" % j, headers=headers, )
+            response = requests.get("https://www.tcpjw.com/OrderList/TradingCenter/", data={"pageIdx_client": "%s" % j,"pt_tradestatus": "00"},
+                                      proxies=proxy, headers=headers, verify=False, allow_redirects=False)
             requests.adapters.DEFAULT_RETRIES = 5
             s = requests.session()
             s.keep_alive = False
             time.sleep(1)
             print("--------------------爬取-待结单-----第%s页数据-------------------------------------------------------------" % j)
             print(response.status_code)
+            print(response.text)
             # 判断请求状态 切换IP
             if response.status_code != 200:
                 ip_pool.pop()
                 time.sleep(1)
                 response = requests.get("https://www.tcpjw.com/OrderList/TradingCenter?pageIdx_client=%s" % j,
-                                        headers=headers, proxies=ip_proxy())
+                                        headers=headers)
                 requests.adapters.DEFAULT_RETRIES = 5
                 s = requests.session()
                 s.keep_alive = False

@@ -55,7 +55,7 @@ def crack():
     driver = webdriver.Chrome(executable_path=r'D:\softwares\chromedriver\chromedriver.exe', options=optons)
     driver.get("https://www.jinbill.com/login/plogin.html")
     driver.maximize_window()
-    time.sleep(1)
+    time.sleep(random.random()*3)
     # 发送手机号
     _btn_phone_number = driver.find_element_by_xpath('//*[@id="userphone"]')
     if _btn_phone_number:
@@ -64,16 +64,16 @@ def crack():
     _btn_passcode = driver.find_element_by_xpath('//*[@id="password"]')
     if _btn_passcode:
         _btn_passcode.send_keys("yy123456")
-    time.sleep(1)
+    time.sleep(random.random()*3)
     # 点击登录
     driver.find_element_by_xpath("//div[2]/div/div/div/div/div[1]").click()
-    time.sleep(1)
+    time.sleep(random.random()*3)
     while True:
         # 进入云库存
         btn = driver.find_element_by_xpath("//div[3]//ul/li[3]/a")
         if btn:
             btn.click()
-            time.sleep(1)
+            time.sleep(random.random() * 3)
             break
         else:
             continue
@@ -105,7 +105,7 @@ def crack():
                 # 获取当前窗口的句柄
                 currentWin = driver.current_window_handle
                 driver.switch_to.window(currentWin)
-                time.sleep(2)
+                time.sleep(random.random() * 3)
                 # 保存图片
                 driver.save_screenshot(r"C:\Users\admin\Desktop\TCPJW\certify_code\票易安票面照片\p_%s.png" % (i))
                 # 获取图片链接
@@ -117,13 +117,16 @@ def crack():
                         # 获取出票人全称    收票人全称
                         response = requests.get(img_url)
                         # print(response.content)
+                        # APP_ID = '16340507'
+                        # API_KEY = '3BcdhviIZhIq1R0eW3nDO5id'
+                        # SECRECT_KEY = 'GQglG2S9KB84wArEgDCxdFMoKElSVEg2'
                         APP_ID = '16340507'
                         API_KEY = '3BcdhviIZhIq1R0eW3nDO5id'
                         SECRECT_KEY = 'GQglG2S9KB84wArEgDCxdFMoKElSVEg2'
                         client = AipOcr(APP_ID, API_KEY, SECRECT_KEY)
                         company_ls = []
-                        message = client.basicAccurate(response.content)
-                        # message = client.basicGeneral(response.content)
+                        # message = client.basicAccurate(response.content)
+                        message = client.basicGeneral(response.content)
                         print(message)
 
                         for j in message.get('words_result')[5:20]:
@@ -181,8 +184,7 @@ def crack():
                         #         days_left.text + ',' + time_.text.strip(
                         #     "今天") + ',' + number.text + ',' + company_.text + ',' + img_url + "\n")
 
-
-                        time.sleep(3)
+                        time.sleep(random.random() * 3)
                         driver.find_element_by_xpath('//div[5]/div[3]/div[2]/div[2]/div[1]/button[1]').click()
 
                         # while True:
@@ -216,8 +218,8 @@ def f1_to_f2():
 
 
 if __name__ == '__main__':
-    # crack()
-    f1_to_f2()
+    crack()
+    # f1_to_f2()
 
 
 

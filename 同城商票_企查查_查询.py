@@ -17,7 +17,8 @@ headers = {
 # chinaCompan ="贵州电网有限责任公司"
 # chinaCompan ="泸州恒大南城置业有限公司"
 # chinaCompan ="中国石油集团西部钻探工程有限公"
-chinaCompan ="湖南航天机电设备与特种材料研究所"
+chinaCompan ="济南金科西城房地产开发有限公司"
+
 
 
 testUr = "https://www.qichacha.com/search?key=" + chinaCompan
