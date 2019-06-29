@@ -41,14 +41,8 @@ async def main(username, pwd, url):
     # await page.click("> div> div > div> div > ul > li:nth-child(2)> a")
     # time.sleep(5)
     await get_cookie(page)  #
+    return get_cookie(page)
 
-    url = "https://www.tcpjw.com/"
-
-
-
-    response = requests(url=url, headers=headers)
-
-    # print(response)
 
 
 
@@ -57,14 +51,18 @@ async def main(username, pwd, url):
 async def get_cookie(page):
     # res = await page.content()
     cookies_list = await page.cookies()
-    print(cookies_list)
+    # print(cookies_list)
     cookies = ''
     for cookie in cookies_list:
         str_cookie = '{0}={1};'
         str_cookie = str_cookie.format(cookie.get('name'), cookie.get('value'))
         cookies += str_cookie
-    print(cookie)
-    return cookies
+    print(cookies_list[0]["name"], cookies_list[0]["value"])
+    print(cookies_list[1]["name"], cookies_list[1]["value"])
+    print(cookies_list[2]["name"], cookies_list[0]["value"])
+    cookie_full = cookies_list[0]["name"]+"="+cookies_list[0]["value"]+";"+cookies_list[1]["name"]+"="+cookies_list[1]["value"]+";"+cookies_list[2]["name"]+"="+cookies_list[2]["value"]
+    print(cookie_full)
+    return cookie_full
 
 
 def retry_if_result_none(result):
