@@ -9,50 +9,89 @@ import time
 import requests
 import random
 import pytesseract
+from pytesseract import *
 from PIL import Image
+from aip import AipOcr
+import threading
+from selenium.webdriver.common.alert import Alert
+# 获取处理验证码
+driver = webdriver.Ie("D:\IEDriver\IEDriverServer")
+driver.get("https://ebank.sdb.com.cn/corporbank/logon_basic.jsp")
+driver.maximize_window()
+_btn1 = driver.find_element_by_id('PCLogonTip')
+# 点击UKEY登录
+if _btn1:
+    _btn1.click()
+
+# 获取验证码图片 certify_code.png，并识别内容
+driver.save_screenshot('full_snap.png')
+page_snap_obj = Image.open('full_snap.png')
+img = driver.find_element_by_class_name('inputcodeM')
+time.sleep(1)
+location = img.location
+# print(location)
+size = img.size
+left = location['x']
+top = location['y']
+right = left + size['width']
+bottom = top + size['height']
+image_obj = page_snap_obj.crop((left, top, right, bottom))
+image_obj.save("certify_code.png")
 
 
-def crack():
-    # 浏览器启动设置类
-    # optons = webdriver.ChromeOptions()
-    # 浏览器启动配置
-    # optons.add_argument('disable-infobars')
-    # driver = webdriver.Chrome(executable_path=r'D:\softwares\chromedriver\chromedriver.exe', options=optons)
-    # driver = webdriver.Edge("D:\softwares\edgedriver\MicrosoftWebDriver.exe")
-    # action = ActionChains(driver)
-    # wait = WebDriverWait(driver, 20)
-    driver = webdriver.Ie("D:\softwares\IEDriver\IEDriverServer")
-    driver.get("https://ebank.sdb.com.cn/corporbank/logon_basic.jsp")
-    driver.maximize_window()
-    # driver.refresh()
-    time.sleep(3)
-    _btn1 = driver.find_element_by_id('PCLogonTip')
-    # 点击UKEY登录
-    if _btn1:
-        _btn1.click()
-    time.sleep(20)
+# 获取验证码
+APP_ID = '16340507'
+API_KEY = '3BcdhviIZhIq1R0eW3nDO5id'
+SECRECT_KEY = 'GQglG2S9KB84wArEgDCxdFMoKElSVEg2'
+client = AipOcr(APP_ID, API_KEY, SECRECT_KEY)
+i = open(r'C:\Users\mayn\Desktop\平安银行模拟登录\certify_code.png','rb')
+img = i.read()
+# message = client.basicGeneral(img)
+message = client.basicAccurate(img)
+for i in message.get('words_result'):
+    text = i.get('words').replace(' ', '').replace('-', '')
+    print(text)
 
-    # 处理验证码
-    # img = driver.find_element_by_id("verifyImg")
-    # VerifyImage?update = ' + Math.random();
-    # html = driver.page_source
-    # image = Image.open('img')
-    # text = pytesseract.image_to_string(image)
-    # print(text)
-
-    # 用户名和密码
-    # send_usr_name = driver.find_element_by_class_name("inputnameM")
-    # if send_usr_name:
-    #     send_usr_name.send_keys("2000856048@14")
-    # time.sleep(1)
+try:
+    # a1 = Alert(driver)
+    # if a1:
+    #     print(a1.text)
+    # 登录
+    send_usr_name = driver.find_element_by_id("userAliasText")
+    if send_usr_name:
+        send_usr_name.send_keys("2000856048@15")
+    time.sleep(10)
     # send_pwd = driver.find_element_by_class_name("inputpswdM")
+    # send_pwd = driver.find_element_by_class_name("security-suite-tip")
+    # send_pwd = driver.find_element_by_id("powerpass")
+    # send_pwd = driver.find_element_by_id("powerpass_UtilObject")
+    # send_pwd = driver.find_element_by_xpath("//*[@id='div_ukey'']//tr[2]/td[2]")
     # if send_pwd:
-    #     send_pwd.send_keys("12345678")
-    # 识别验证码，并发送
-    # send_certift_code = driver.find_element_by_class_name("inputcodeM")
+    #     send_pwd.send_keys("0803kkok")
+    # time.sleep(5)
+    # 识别验证码，并发送 //*[@id="div_ukey"]/table/tbody/tr[2]/td[2]
+    # send_certift_code = driver.find_element_by_id("checkCodeText")
     # if send_certift_code:
     #     send_certift_code.send_keys(text)
+
     driver.find_element_by_class_name("ukey_login_btn").click()
+    # a1 = driver.switch_to.alert
+    # print(a1.text)
+    # a1.send_keys("12345678")
+    # time.sleep(1)
+    # a1.accept()
+
+    time.sleep(5)
+    # 点击付款业务
+    driver.find_element_by_id("03").click()
+    # 点击支付结算
+    driver.find_element_by_class_name("0301").click()
+    #点击 对外转账
+    driver.find_element_by_class_name("030102").click()
+    time.sleep(5)
+
+except (IndexError, Exception) as e:
+    print(e)
 
 
 
@@ -60,48 +99,9 @@ def crack():
 
 
 
-    """
-    # 点击 企业大厅
-    _btn = driver.find_element_by_xpath('//div[2]//div[1]//li[2]/a')
-    if _btn:
-        _btn.click()
-    html_content = driver.page_source
-    print(html_content)
-    time.sleep(3)
-    for j in range(3, 21):
-        # 3-20页
-        # 点击第一页 xpath://*[@id="page_section"]/div/a[3]
-        driver.refresh()
-        _btn1 = driver.find_element_by_xpath('//*[@id="page_section"]/div/a[%s]'%j)
-        if _btn1:
-            _btn1.click()
-        for i in range(1, 16):
-            # 1 发布时间
-            item_time = driver.find_element_by_xpath('//*[@id="tb"]/tr[%s]/td[1]' % i)
-            # 2 承税人
-            item_person = driver.find_element_by_xpath('//*[@id="tb"]/tr[%s]/td[2]' % i)
-            # 3 金额（万元）
-            item_amount = driver.find_element_by_xpath('//*[@id="tb"]/tr[%s]/td[3]' % i)
-            # 4 到期日
-            expire_date = driver.find_element_by_xpath('//*[@id="tb"]/tr[%s]/td[4]' % i)
-            # 5 每十万扣息
-            interest_every_100_thousand = driver.find_element_by_xpath('//*[@id="tb"]/tr[%s]/td[5]' % i)
-            # 6 年息
-            annual_interest = driver.find_element_by_xpath('//*[@id="tb"]/tr[%s]/td[6]' % i)
-            # 7 瑕疵
-            defect_spot = driver.find_element_by_xpath('//*[@id="tb"]/tr[%s]/td[7]' % i)
-            print("---------爬取第%s页，第%行数据--------------------------------------------------------" % (j, i))
-            print("--------------------------------------------------------------------------------------")
-            print("发布时间: %s" % item_time.text)
-            print("承税人: %s" % item_person.text)
-            print("金额（万元）: %s" % item_amount.text)
-            print("到期日: %s" % expire_date.text)
-            print("每十万扣息: %s" % interest_every_100_thousand.text)
-            print(" 年息: %s" % annual_interest.text)
-            print("瑕疵: %s" % defect_spot.text)
-        """
 
-crack()
+
+
 
 
 
