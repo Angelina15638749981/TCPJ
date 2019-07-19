@@ -1,0 +1,1007 @@
+
+<html><head>
+    <title>平安企业网上银行 欢迎您的光临！</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Set-Cookie" content="text/html;HttpOnly=true">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .content{
+            background-position:left top;
+            height:auto;
+            clear:both;
+            min-height:478px;
+        }
+        .security-suite-tip a{margin-top:0px;}
+        .inputBoxM_adjust{
+            height:413px;
+            width: 510px;
+            padding: 3px 20px 0px;
+            background:url(images/logon_basic/bj.png) no-repeat 0 0;
+        }
+        .po_r{position: relative;}
+        .ukey_login{height: 130px; margin-top: 60px; }
+        .code_login{height: 130px;}
+        .code_login_area_po{
+            position: absolute;
+            left: 196px;
+            top: 118px;
+            z-index: 999;
+        }
+        .code_login .text_area{
+            width: 510px;
+            color: #414141;
+            text-align: center;
+        }
+        .code_login .text_area h6{
+            margin: 0;
+            font-size: 18px;
+            font-weight:bold;
+            line-height: 38px;
+        }
+        .code_login .text_area p{
+            font-size: 14px;
+            line-height: 34px;
+        }
+        .code_login .text_area .text_link{
+            font-size: 14px;
+            line-height: 34px;
+            text-decoration: underline;
+            display: block;
+            float: none;
+            margin-top: 0;
+            position: relative;
+        }
+        .code_login_area{
+            box-sizing: content-box;
+            width: 119px;
+            padding: 10px 8px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+        .code_login_area .code_login_pic_area{
+            position: relative;
+            box-sizing: content-box;
+            width: 144px;
+            height: 144px;
+            background-color: #fff;
+            padding: 2px;
+            border:1px solid #fd8428;
+        }
+        .code_login_area .delete_bj{background: none;}
+        .code_refresh{
+            position: absolute;
+            z-index: 999;
+            bottom: 0;
+            right: 0;
+            background:url(images_pa/mark_bj.png) repeat 0 0;
+            background: hsla(0,0%,25%,.7);
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .code_refresh p{
+            padding: 0 6px;
+            margin: 52px 0 6px;
+            font-size: inherit;
+            line-height: inherit;
+            text-align: inherit;
+        }
+        .code_refresh a{
+            width: 100%;
+            margin: 0;
+            font-size: inherit;
+            line-height: inherit;
+            text-align: inherit;
+            color: #fff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .replace_blank{
+            display: block;
+            float: left;
+            /*margin-top: 65px;*/
+            position: relative;
+            width: 142px;
+            /*height: 55px;*/
+            background: none;
+        }
+        .dis_no{display: none;}
+        .btn_area{
+            margin-top: 8px;
+            margin-left: 160px;
+        }
+        .btn_area a{
+            display: inline;
+            text-decoration: none;
+            height: 52px;
+            font-size: 14px;
+            line-height: 48px;
+            text-align: center;
+            font-weight:bold;
+        }
+        .btn_area a:hover{text-decoration: underline;}
+        .btn_area .ukey_login_btn{
+            width: 230px;
+            height:36px;
+            margin: 0;
+            line-higth:36px;
+            background:url(images/logon_basic/ukey_login_button.png) no-repeat 0 0;
+            color: #fff;
+        }
+        .btn_area .code_login_btn{
+            width: 142px;
+            height:50px;
+            margin-top: 0;
+            background:url(images_pa/btn2.png) no-repeat 0 0;
+            color: #f87533;
+        }
+        .tipsclass{
+            height:46px;
+        }
+        .appTipClass{
+            font-size:16px;
+            width:254px;
+            float:left;
+            text-align: center;
+            line-height: 45px;
+            color : #414141;
+            font-weight:bold;
+        }
+        .choose_active{
+            color : #fd8428;
+            background:url(images/logon_basic/active_bar.png) no-repeat 0 bottom;
+        }
+        .picture_content{
+            width :295px;
+            height :150px;
+            margin: 120px;
+            position: absolute;
+            padding-left: 12px;
+            top: 196px;
+        }
+        .picture_content_li{
+            font-size: 14px;
+            color: #414141;
+            float: left;
+            padding: 0 20px 0 10px;
+
+        }
+        .mb_help_li{
+            font-size: 14px;
+            color: #18387E;
+            text-align: center;
+            padding: 0 1px 0 6px;
+            cursor: pointer;
+            display: inline;
+        }
+        .mb_help_li:hover{
+            color: #fb7b16;
+        }
+
+    </style>
+    <script language="javascript" src="scripts/lib/shortcut.js"></script>
+    <script language="javascript" src="scripts/public.js"></script>
+    <script language="javascript" src="scripts/ecert.js?timestamp=20190719164519"></script><script src="https://applogin.orangebank.com.cn/applogin/getTonkenKey.do?callback=jsonp1563525921940&amp;_=1563525923180&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e&amp;APPCallback=qrCodeFunction&amp;flag=000000"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921941&amp;_=1563525923247&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921942&amp;_=1563525924308&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921943&amp;_=1563525927427&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921944&amp;_=1563525928491&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921945&amp;_=1563525929625&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921946&amp;_=1563525930675&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921947&amp;_=1563525931724&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921948&amp;_=1563525932775&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921949&amp;_=1563525933824&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921950&amp;_=1563525934892&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921951&amp;_=1563525935941&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921952&amp;_=1563525937008&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921953&amp;_=1563525938058&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921954&amp;_=1563525939125&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921955&amp;_=1563525940192&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921956&amp;_=1563525941242&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script><script src="https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do?callback=jsonp1563525921957&amp;_=1563525949527&amp;tokenStr=67f432bfaa65b9885bef76bab96eb81070272f7060fd70b1e469c22e1ffb25b7&amp;APPCallback=doQrSignlogin&amp;frontTonken=_c6ed6c91a626e046296456bed3da3e7e"></script></head><body style="background-color: rgb(255, 255, 255);" onload="init();"><object width="1" height="1" tabindex="2" id="versionObj" classid="clsid:18ACDA98-568C-4DC0-9586-2F8D0A026648"><PARAM NAME="_Version" VALUE="65536"><PARAM NAME="_ExtentX" VALUE="26"><PARAM NAME="_ExtentY" VALUE="26"><PARAM NAME="_StockProps" VALUE="0"><PARAM NAME="adjustTime" VALUE="1"><param name="width" value="1"><param name="height" value="1"><param name="maxLength" value="16"><param name="minLength" value="6"><param name="maskChar" value="*"><param name="backColor" value="#FFFFFF"><param name="textColor" value="#000000"><param name="borderColor" value="#ffffff"><param name="accepts" value="[\w\W]*"><param name="caption" value="平安银行"><param name="captionColor" value="#ffffff"><param name="captionFont" value=""><param name="captionSize" value="0"><param name="captionBold" value="true"><param name="lang" value="zh_CN"><param name="softKeyboard" value="true"></object>
+    <script language="javascript" src="scripts/security.js?timestamp=20190719164519" charset="gb2312"></script>
+    <script language="javascript" src="scripts/HtmlObjectFunction.js"></script>
+    <script language="javascript" src="scripts/lib/prototype.js"></script>
+    <script language="javascript" src="scripts/lib/prototype_EMP.js"></script>
+    <script language="javascript" src="scripts/lib/effects.js"></script>
+    <script language="javascript" src="scripts/lib/window.js"></script>
+    <script language="javascript" src="scripts/window.js"></script>
+    <script src="scripts/jquery.js" type="text/javascript"></script>
+    <script language="javascript" src="scripts/jquery.base64.js"></script>
+    <script type="text/javascript">
+        var frontKey="";
+        var showValue = "";
+        $(function(){
+            //把登录过的帐号名反显到下拉框中 add by lijs 20180425
+            var strcookie = document.cookie;//读取cookie:document.cookie
+            var arrcookie = strcookie.split("; ");//按分号空格分割
+            var option = null;
+            for(var i=arrcookie.length-1; i>=0; i--){
+                var arr = arrcookie[i].split("=");
+                var cookieName = arr[0];
+                //addby yangmk20180426 begin
+                if(cookieName.indexOf("JSESSIONID") != -1){
+                    frontKey = unescape(arr[1]);
+                }
+            }
+            if(frontKey){
+                if(frontKey.length>4)
+                    frontKey = frontKey.substr(4,frontKey.length)+"_"+'c6ed6c91a626e046296456bed3da3e7e';
+                else
+                    frontKey = frontKey+"_"+'c6ed6c91a626e046296456bed3da3e7e';
+            }else{
+                frontKey ="_"+'c6ed6c91a626e046296456bed3da3e7e';
+            }
+
+        });
+
+
+        var tokenStr="";
+        var loginSTT="";
+        function initPage(flag){
+            tabsta = flag;
+            if(tabsta==1){
+                logonPageType='CP';
+                createQrCode();
+                $("#nav_1").attr("class", 'nav1_current');
+                $("#div1").show();
+                $("#nav_2").attr("class", 'nav2');
+                $("#div2").hide();
+                $("#nav_3").attr("class", 'nav3');
+                $("#div3").hide();
+                //  document.getElementById('verifyImg').onclick();
+                //	document.getElementById('userAliasText').focus();
+                //	$("#logonDiv1").html("<img src='img/pay/enter_bt.png' width='142' height='52' onload='fixPNG(this)'/>");
+
+            }else if(tabsta ==2 ){
+                logonPageType='FI';
+                $("#nav_1").attr("class", 'nav1');
+                $("#div1").hide();
+                $("#nav_2").attr("class", 'nav2_current');
+                $("#div2").show();
+                $("#logonDiv2").html("<img src='img/pay/enter_bt.png' width='142' height='52' onload='fixPNG(this)'/>");
+                $("#nav_3").attr("class", 'nav3');
+                $("#div3").hide();
+                //	document.getElementById('verifyImg2').onclick();
+                document.getElementById('userAliasText2').focus();
+            }else if(tabsta==3){
+                $("#nav_1").attr("class", 'nav1');
+                $("#div1").hide();
+                $("#nav_2").attr("class", 'nav2');
+                $("#div2").hide();
+                $("#nav_3").attr("class", 'nav3_current');
+                $("#div3").show();
+            }
+            alphaBackgrounds(tabsta);
+        }
+
+        function createQrCode(){
+            document.getElementById('pic_div').style.display="none";
+            jQuery.ajax({
+                url:'https://applogin.orangebank.com.cn/applogin/getTonkenKey.do',
+                dataType:'jsonp',
+                data:{'frontTonken':frontKey,"APPCallback":"qrCodeFunction","flag":"000000"}
+            });
+        }
+
+        function qrCodeFunction(data){
+            if("000"==data.ec){
+                var qrCodeString = data.QRCode;
+                tokenStr = data.tokenStr;
+                document.getElementById('imageQR').src="data:image/jpg;base64,"+qrCodeString;
+                queryConfirmStt(tokenStr);
+            }else{
+                document.getElementById('pic_div').style.display="";
+                document.getElementById('showMessage').innerHTML="二维码生成失败";
+                return;
+            }
+        }
+
+        function queryConfirmStt(tokenStr){
+
+            jQuery.ajax({
+                url:'https://applogin.orangebank.com.cn/applogin/getSTTbyKey.do',
+                dataType:'jsonp',
+                data:{"tokenStr":tokenStr,"APPCallback":"doQrSignlogin",'frontTonken':frontKey}
+            });
+        }
+
+
+        function doQrSignlogin(data){
+            loginSTT = data.loginSTT;
+            if("000"==data.ec){
+                if("1002"==data.loginSTT){
+                    document.logonQRForm.tokenKey.value = tokenStr;
+                    document.logonQRForm.FMJournalNo.value = data.commFlow;
+                    document.logonQRForm.frontKey.value = frontKey;
+                    document.logonQRForm.logonPageType.value = "CP";
+                    document.logonQRForm.submit();
+                }else if("1001"==data.loginSTT){
+                    window.setTimeout('queryConfirmStt(\''+tokenStr+'\')', 1000);
+                }else{
+                    document.getElementById('pic_div').style.display="";
+                    document.getElementById('showMessage').innerHTML=data.em;
+                    return;
+                }
+            }else{
+                document.getElementById('pic_div').style.display="";
+                document.getElementById('showMessage').innerHTML=data.em;
+                return ;
+            }
+
+        }
+
+        function changeVerifyImgClick(flag){
+            if(flag==1){
+                document.getElementById('verifyImg').onclick();
+            }else if(flag ==2 ){
+                document.getElementById('verifyImg2').onclick();
+            }
+        }
+
+        function changeclass(flag){
+            initPage(flag);
+            changeVerifyImgClick(flag)
+        }
+
+        function changeLogclass(value){
+            if("1"==value){
+                $("#PCLogonTip").removeClass('choose_active');
+                $("#div_ukey").addClass('dis_no');
+                $("#appLogonTip").addClass('choose_active');
+                $("#div_qrcode").removeClass('dis_no');
+            }else{
+                $("#appLogonTip").removeClass('choose_active');
+                $("#div_ukey").removeClass('dis_no');
+                $("#PCLogonTip").addClass('choose_active');
+                $("#div_qrcode").addClass('dis_no');
+            }
+
+        }
+    </script>
+    <script language="JavaScript">
+
+        shortcut.add("ENTER", doSubmit );
+        var logonPageType='CP';
+
+        function doSubmit()
+        {
+            var userAlias =null;
+            var checkCode =null;
+            var logonLanguage = "ZH_CN";
+
+            if(logonPageType=='CP'){
+                userAlias=document.getElementById('userAliasText').value;
+                checkCode=document.getElementById('checkCodeText').value;
+            }else{
+                userAlias=document.getElementById('userAliasText2').value;
+                checkCode=document.getElementById('checkCodeText2').value;
+            }
+
+            if ( isEmpty(userAlias)  )
+            {
+                alert("请输入用户名！");
+                if(logonPageType=='CP')
+                    document.getElementById('userAliasText').focus();
+                else
+                    document.getElementById('userAliasText2').focus();
+                return;
+            }
+
+            if ( isEmpty(checkCode)  )
+            {
+                alert("请输入验证码！");
+                if(logonPageType=='CP')
+                    document.getElementById('checkCodeText').focus();
+                else
+                    document.getElementById('checkCodeText2').focus();
+                return;
+            }
+
+            document.logonForm.userAlias.value = userAlias;
+            document.logonForm.checkCode.value = checkCode;
+            document.logonForm.logonPageType.value = logonPageType;
+            document.logonForm.logonLanguage.value = logonLanguage;
+            var sourceValue = 'userAlias='+userAlias + '&checkCode=' + checkCode;
+            if(!ecertSign("logonForm",sourceValue)){
+                alert("签名异常！");
+                return;
+            }
+
+            url = "/corporbank/"
+                + "getSystemTime.do";
+            var param = null;
+            sendAjaxRequest( 'POST', url, param, setTime );
+        }
+
+
+        function setTime(contextData)
+        {
+            var time = contextData.getValueAt("operationTime");
+            document.logonForm.ts.value = time;
+            var password =logonPageType=='CP' ? getIBSPassword("powerpass", Date.parse(new Date()) , "请输入6-20位网银登录密码！") : getIBSPassword("powerpass2", Date.parse(new Date()) , "请输入6-20位网银登录密码！");
+            var macadd = getMAC("powerpass", time);
+            if (isEmpty(password))
+            {
+                return ;
+            }
+            var ts = document.logonForm.ts.value;
+            var passwordEncrypted = logonPageType=='CP' ? getIBSPassword2("powerpass",ts) : getIBSPassword2("powerpass2",ts);
+            if ( isEmpty(password) || isEmpty(passwordEncrypted) )
+            {
+                alert("获取密码异常！");
+                return ;
+            }
+            document.logonForm.password.value = password;
+            document.logonForm.macadd.value = macadd;
+            document.logonForm.passwordEncrypted.value = passwordEncrypted;
+            document.logonForm.submit();
+        }
+
+        function init(){
+
+//	document.getElementById('userAliasText').focus();
+            //document.getElementById('verifyImg').onclick();
+            if('FI' == 'CP')
+                initPage(2);
+            else
+                initPage(1);
+            document.getElementById("Kii_GetVersion_ex").innerHTML = document.signx.Kii_GetVersion_ex();
+            document.getElementById("Mi_GetVersion_ex").innerHTML = getPassVersion();
+        }
+
+        function getPassVersion(){
+            var version = '' ;
+            try {
+                version = document.powerpass.getVersion();
+            } catch (e) {
+                document.getElementById("Mi_GetVersion_ex").style.display= "none";
+            }
+            return version ;
+        }
+
+        function fixPNG(myImage)
+        {
+            var arVersion = navigator.appVersion.split("MSIE");
+            var version = parseFloat(arVersion[1]);
+
+            if ((version >= 5.5) && (version < 7) && (document.body.filters))
+            {
+                var imgID = (myImage.id) ? "id='" + myImage.id + "' " : "";
+                var imgClass = (myImage.className) ? "class='" + myImage.className + "' " : "";
+                var imgTitle = (myImage.title) ? "title='" + myImage.title   + "' " : "title='" + myImage.alt + "' ";
+                var imgStyle = "display:inline-block;" + myImage.style.cssText;
+                var strNewHTML = "<span " + imgID + imgClass + imgTitle
+                    + " style=\"" + "width:" + myImage.width
+                    + "px; height:" + myImage.height
+                    + "px;" + imgStyle + ";"             + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+                    + "(src=\'" + myImage.src + "\', sizingMethod='scale');\"></span>";
+                myImage.outerHTML = strNewHTML;
+            }
+        }
+
+        function alphaBackgrounds(flag){
+
+
+            var arVersion = navigator.appVersion.split("MSIE");
+            var version = parseFloat(arVersion[1]);
+            if ((version >= 5.5) && (version < 7) && (document.body.filters)){
+
+                for (i=0; i<document.all.length; i++){
+                    var bg = document.all[i].currentStyle.backgroundImage;
+                    if (bg.match(/.png/i) != null){
+                        var mypng = bg.substring(5,bg.length-2);
+                        document.all[i].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+mypng+"', sizingMethod='crop')";
+                        document.all[i].style.backgroundImage = "url('')";
+                    }
+                    if(document.all[i].id.substring(0,4)=="nav_"){
+                        if(document.all[i].id=="nav_"+flag){
+                            var addPng = '/corporbank/'+'images_pa/pab1.png';
+                            document.all[i].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+addPng+"', sizingMethod='crop')";
+                        }else {
+                            var removePng = '/corporbank/'+'images_pa/pab1_t.png';
+                            document.all[i].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+removePng+"', sizingMethod='crop')";
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        function appInfo() {
+            var Sys = {};
+            var ua = navigator.userAgent.toLowerCase();
+            var s;
+
+            (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+                (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+                    (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+                        (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+                            (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+            var browserTpye = "";
+            if (Sys.ie) {
+                browserTpye = "msie" + "|" + Sys.ie
+            };
+            if (Sys.firefox) {
+                browserTpye = "Firefox" + "|" + Sys.firefox
+            };
+            if (Sys.chrome) {
+                browserTpye = "Chrome" + "|" + Sys.chrome
+            };
+            if (Sys.opera) {
+                browserTpye = "Opera" + "|" + Sys.opera
+            };
+            if (Sys.safari) {
+                browserTpye = "Safari" + "|" + Sys.safari
+            };
+
+            return browserTpye;
+        }
+
+        //公司网银首页
+        function online_corporation() {
+            var urlAddr = encodeURIComponent(window.document.location.href);
+            var _enterpage = '公司网银首页';
+            if((typeof(enterpage)!='undefined')){
+                _enterpage = enterpage;
+            }
+            _enterpage = encodeURIComponent(_enterpage);
+            var browserTpye = appInfo();
+            var domainUrl = "http://eim.pingan.com.cn";
+            var url = domainUrl + "/web/inner?browserTpye=" + browserTpye + "&enterpage=" + _enterpage + "&domainUrl=" + domainUrl + "&urlAddr=" + urlAddr;
+            window.open(url, 'webIM', 'height=700,width=1020,titlebar=no,menubar=no,toolbar=no,location=no,directories=no,scrollbars=no,status=no,resizable=no,top=' + (screen.availHeight - 737) / 2 + ',left=' + (screen.availWidth - 1024) / 2 + ';');
+        }
+
+        function mouseOver(paramValue){
+            if("1"==paramValue){//下载口袋财务APP
+                $("#titleTips1").addClass('dis_no');
+                $("#login_qr_area").addClass('dis_no');
+                $("#download_qr_area").removeClass('dis_no');
+                $("#titleTips2").removeClass('dis_no');
+                $("#help_center_area").addClass('dis_no');
+                $("#titleTips3").addClass('dis_no');
+                $("#open_mb_area").addClass('dis_no');
+                $("#titleTips4").addClass('dis_no');
+            }else if("2"==paramValue){//帮助中心
+                $("#titleTips1").addClass('dis_no');
+                $("#login_qr_area").addClass('dis_no');
+                $("#download_qr_area").addClass('dis_no');
+                $("#titleTips2").addClass('dis_no');
+                $("#help_center_area").removeClass('dis_no');
+                $("#titleTips3").removeClass('dis_no');
+                $("#open_mb_area").addClass('dis_no');
+                $("#titleTips4").addClass('dis_no');
+            }else{
+                $("#titleTips1").addClass('dis_no');
+                $("#login_qr_area").addClass('dis_no');
+                $("#download_qr_area").addClass('dis_no');
+                $("#titleTips2").addClass('dis_no');
+                $("#help_center_area").addClass('dis_no');
+                $("#titleTips3").addClass('dis_no');
+                $("#open_mb_area").removeClass('dis_no');
+                $("#titleTips4").removeClass('dis_no');
+            }
+        }
+        function mouseOut(paramValue){
+            //登录二维码相关
+            $("#titleTips1").removeClass('dis_no');
+            $("#login_qr_area").removeClass('dis_no');
+            $("#titleTips2").addClass('dis_no');
+            $("#download_qr_area").addClass('dis_no');
+            $("#titleTips3").addClass('dis_no');
+            $("#help_center_area").addClass('dis_no');
+            $("#open_mb_area").addClass('dis_no');
+            $("#titleTips4").addClass('dis_no');
+        }
+        function leaderToAppDown(){
+            window.open('https://ebank.sdb.com.cn/embank/static/HelpCenter/shareDownload.html');
+        }
+    </script>
+    <script language="javascript" for="powerpass" event="EventReturn">
+        document.getElementById('checkCodeText').focus();
+    </script>
+    <!-- add by chengch 20150324 增加用户登入密码安全等级 -->
+    <script language="javascript" for="powerpass" event="EventDegree(arg1)">
+        var degree = "";
+        var dcolor = "";
+        if(arg1 == "W")
+        {
+            degree = "弱";
+            dcolor =  "red";
+
+        }
+        else if(arg1 == "M")
+        {
+            degree = "中";
+            dcolor =  "orange";
+
+        }
+        else if(arg1 == "S")
+        {
+            degree = "强";
+            dcolor =  "green";
+
+        }
+        document.logonForm.passwordLevel.value = arg1;
+    </script>
+    <script language="javascript" for="powerpass" event="EventTab">
+        document.getElementById('checkCodeText').focus();
+    </script>
+    <script language="javascript" for="powerpass2" event="EventReturn">
+        document.getElementById('checkCodeText2').focus();
+    </script>
+    <script language="javascript" for="powerpass2" event="EventTab">
+        document.getElementById('checkCodeText2').focus();
+    </script>
+    <script>
+        window.open("https://my.orangebank.com.cn/orgLogin/enterprise_ebank/indexLogin/modal/dialog.html","normal","width=750,height=450,scrollbars=no,resizable=no");
+    </script>
+
+
+
+<div class="main" id="mainDiv">
+    <div class="top"></div>
+    <div class="lab">
+        <ul>
+            <li class="nav1_current" id="nav_1" onclick="changeclass(1);">企业用户登录</li>
+            <li class="nav2" id="nav_2" onclick="changeclass(2);">同业用户登录</li>
+            <li class="nav3" id="nav_3" onclick="changeclass(3);">快速查询区</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="leftCont">
+            <div id="div1">
+                <div class="inputBoxM po_r inputBoxM_adjust">
+                    <div class="tipsclass">
+                        <ul>
+                            <li class="appTipClass" id="appLogonTip" onclick="changeLogclass(1);">口袋财务扫码登录</li>
+                            <li class="appTipClass choose_active" id="PCLogonTip" onclick="changeLogclass(2);">UKEY登录</li>
+                        </ul>
+                    </div>
+                    <div class="ukey_login" id="div_ukey">
+                        <table style="width: 450px; margin-left: 96px;" border="0" cellspacing="2" cellpadding="0">
+                            <tbody><tr><td>用&nbsp;户&nbsp;名：</td>
+                                <td class="inputnameM">&nbsp;<input name="userAliasText" width="50" tabindex="1" id="userAliasText" type="text" value=""></td>
+                                <td rowspan="1">
+                                    <div class="replace_blank"></div>
+                                </td>
+                            </tr>
+                            <tr><td style="top: 20px; position: relative;">登录密码：</td>
+                                <td class="inputpswdM" valign="middle" style="top: 20px; position: relative;">&nbsp;<div class="security-suite-tip" style="left: 8px; top: 2px; position: absolute;"><script type="text/javascript">writePasswordCtrl('powerpass','3','20','[\w\W]*','218','2')</script><object width="218" height="22" tabindex="2" id="powerpass" classid="clsid:15453A26-6E82-4A6A-9B61-019AC7240420"><PARAM NAME="_Version" VALUE="65536"><PARAM NAME="_ExtentX" VALUE="5768"><PARAM NAME="_ExtentY" VALUE="582"><PARAM NAME="_StockProps" VALUE="0"><PARAM NAME="OleBackColor" VALUE="16777215"><PARAM NAME="OleTextColor" VALUE="0"><PARAM NAME="OleBorderColor" VALUE="16777215"><PARAM NAME="backColor" VALUE=""><PARAM NAME="textColor" VALUE=""><PARAM NAME="maskChar" VALUE="*"><PARAM NAME="accepts" VALUE="[\w\W]*"><PARAM NAME="lang" VALUE="zh_CN"><PARAM NAME="maxLength" VALUE="20"><PARAM NAME="minLength" VALUE="3"><PARAM NAME="caption" VALUE="平安银行"><PARAM NAME="OleCaptionColor" VALUE="16777215"><PARAM NAME="captionFont" VALUE=""><PARAM NAME="captionSize" VALUE="0"><PARAM NAME="captionBold" VALUE="-1"><PARAM NAME="softKeyboard" VALUE="-1"><PARAM NAME="softkbdRandom" VALUE="0"><PARAM NAME="softkbdType" VALUE="0"><PARAM NAME="contentType" VALUE="0"><PARAM NAME="usbkey" VALUE="0"><PARAM NAME="X" VALUE="5"><PARAM NAME="Y" VALUE="0"><PARAM NAME="adjustTime" VALUE="1"><PARAM NAME="tokenMode" VALUE="0"><PARAM NAME="softkbdProtect" VALUE="1"><PARAM NAME="OlePlaceholderColor" VALUE="8421504"><PARAM NAME="placeholderColor" VALUE=""><PARAM NAME="placeholderText" VALUE=""><PARAM NAME="placeholderFontSize" VALUE="12"><PARAM NAME="placeholderFontName" VALUE="宋体"><PARAM NAME="textFontSize" VALUE="0"><PARAM NAME="textFontName" VALUE=""><param name="width" value="218"><param name="height" value="22"><param name="maxLength" value="20"><param name="minLength" value="3"><param name="maskChar" value="*"><param name="backColor" value="#FFFFFF"><param name="textColor" value="#000000"><param name="borderColor" value="#ffffff"><param name="accepts" value="[\w\W]*"><param name="caption" value="平安银行"><param name="captionColor" value="#ffffff"><param name="captionFont" value=""><param name="captionSize" value="0"><param name="captionBold" value="true"><param name="lang" value="zh_CN"><param name="softKeyboard" value="true"></object><object width="1" height="1" tabindex="2" id="powerpass_UtilObject" classid="clsid:18ACDA98-568C-4DC0-9586-2F8D0A026648"><PARAM NAME="_Version" VALUE="65536"><PARAM NAME="_ExtentX" VALUE="26"><PARAM NAME="_ExtentY" VALUE="26"><PARAM NAME="_StockProps" VALUE="0"><PARAM NAME="adjustTime" VALUE="1"><param name="width" value="1"><param name="height" value="1"><param name="maxLength" value="16"><param name="minLength" value="6"><param name="maskChar" value="*"><param name="backColor" value="#FFFFFF"><param name="textColor" value="#000000"><param name="borderColor" value="#ffffff"><param name="accepts" value="[\w\W]*"><param name="caption" value="平安银行"><param name="captionColor" value="#ffffff"><param name="captionFont" value=""><param name="captionSize" value="0"><param name="captionBold" value="true"><param name="lang" value="zh_CN"><param name="softKeyboard" value="true"></object></div>
+                                </td>
+                                <td style="left: 420px; top: 100px; position: absolute;">
+                                    <a href="find_password.html">找回密码</a>
+                                </td>
+                            </tr>
+                            <tr><td style="top: 30px; position: relative;">验&nbsp;证&nbsp;码：</td>
+                                <td class="inputcodeM" valign="middle" style="top: 30px; position: relative;">&nbsp;<input tabindex="3" id="checkCodeText" style="top: 3px; width: 110px; position: absolute;" type="text" size="5">
+                                    <img title="点击图片可刷新验证码，验证码不区分大小写" id="verifyImg" style="top: 3px; right: 6px; vertical-align: middle; position: absolute;" onclick="this.src='VerifyImage?update=' + Math.random()" src="VerifyImage?update=' + Math.random();"></td></tr>
+                        </tbody></table>
+                        <!-- 下拉选择登录名add by lijs 20180425 -->
+                        <select name="userAlias_select" id="userAlias_select" style="margin: -91px auto auto 138px; width: 225px; display: none; position: absolute; z-index: 9999;" multiple="multiple">
+                        </select>
+                        <div class="btn_area">
+                            <input class="ukey_login_btn" id="logonDiv1" style="top: 50px; position: relative;" onclick="doSubmit();" type="button">
+                        </div>
+                    </div>
+                    <!-- 二维码开始 -->
+                    <div class="code_login dis_no" id="div_qrcode">
+                        <div class="text_area" id="titleTips1">
+                            <h6 style="margin-top: 12px;">口袋财务</h6>
+                            <p style="height: 12px; color: rgb(102, 102, 102); line-height: 12px; font-size: 12px;">用心服务&nbsp;值得托付</p>
+                        </div>
+                        <div class="text_area dis_no" id="titleTips2">
+                            <h6 style="margin-top: 25px;">扫码下载口袋财务APP</h6>
+                        </div>
+                        <div class="text_area dis_no" id="titleTips3">
+                            <h6 style="color: rgb(102, 102, 102); line-height: 22px; font-size: 14px; margin-top: 22px;">打开<span style="color: rgb(253, 132, 40); font-size: 14px;">口袋财务APP</span><br>点击左上角<span style="color: rgb(253, 132, 40); font-size: 14px;">扫一扫</span></h6>
+                        </div>
+                        <div class="text_area dis_no" id="titleTips4">
+                            <h6 style="line-height: 18px; font-size: 18px; margin-top: 25px;">只需三步，即可使用口袋财务扫码登录</h6>
+                        </div>
+                        <div class="code_login_area code_login_area_po" id="login_qr_area">
+                            <div class="code_login_pic_area delete_bj" style="text-align: center;">
+                                <img id="imageQR" style="margin-top: 3px;" src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAACLCAIAAADee/2oAAADqElEQVR42u3dUXLqMBBEUfa/abKAVALuvjNWwvVnEkDWoTxSj+q9x9Pr7OvhFPwNoUd3/fYB0asuveH3X5XjKe/0nfd5f1YVUkghViibrGweL03xpfcpX14O7NI35uWrFFJIoSGhS8/rbGqoYpNVFGpmy2/VyxtUSCGF/rdQuXLNFtDll0AhhRT6BCGqflBmVGxRzo9CCil0jlC20KT25+XflOWnzHaPTn0UUujjhahFrT85tIPnTxT6VCH+hEq0z6eWwucv6C+f9VFIIYU6obkY8ZYTOfirsv1AuexWSCGFQCG8nYPvtMsSdUsrCwFWSCGFECGqopSLUarCUTNLtdWbiquQQgohQnP7fHyVjPer8JYYW54VUkihISEqHs3uhEoi8JC3XNkHRVQhhRRihaiscKHTs3l+cXM7cbmDp5BCCkFruWxweDZBHanBa0xTbKr+kEIKKRQJladkynQVjxvK6aOyCYUUUuguIfxEzmYqyu7hn+m/wjAUUiikkEKsEP6YxleuVDs8y0rmctIXmYJCCikECS20hMsJpUZIDb6clnyloJBCCl0Rwidi7sIXx/cGB+/WIYUUUqgTono25cqVWrBmA8OPCiEjVEghhRAh/Kla7uHLz2r6MXGxwceskEIKgUJzgekt/fWyq4S3oJpgRSGFFLpRaC4ebRoqcQCBR7FIU0ohhRQaEsLP8ZT7fGozv9DUp44KKaSQQqBQs+l9DvzvPgst87kkt5wWhRRSaEJorvzMraTLIkF9vai7+PHuFFJIIVSoDDGpbCJ77lPtnHKVXE6mQgopNCGE7+qpUzJ4PxtPYPGzRwoppNCEENU/pn5FJZ5zeSvFeTlTUEghhSChcvqy2oAvzfF0YO4owE/vrJBCCrFChzRm8KnBg9eFFpRCCik0KrQQmFKHfqgdwma6CnTBFVJIofmTJFkdWkg8qSwA74IHg1dIIYUQoXLnjy9qszJG9fLxwWe5rUIKKTQhhDRu4xiR+ghqHY/HDcGvFFJIIUQou5OFPgrexi6D4HI2gnqmkEIKIUJzO3/8rA91sgdPV2eTU4UUUuiO7gNebNgn+GgYSmUKr7/0CimkECqUVZ3Nxvbc7Jd569AGQyGFFBoSyp68VEBZ5qQLg18oogoppNCBQnOxZrm6xTPZhUa7QgopdKDQXIRKrfWpGoMDK6SQQstCWaaAzyxVz/D9QHmDtyWnCin08UJzHRp89he6SlTVaUJehRRSCBHyOvZS6PTrC7ObTRLEC6JrAAAAAElFTkSuQmCC">
+                                <div class="code_refresh" id="pic_div" style="display: none;">
+                                    <p id="showMessage">二维码已失效</p>
+                                    <a onclick="createQrCode()" href="#">点击刷新</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code_login_area code_login_area_po dis_no" id="download_qr_area">
+                            <div class="code_login_pic_area delete_bj" style="text-align: center;">
+                                <img style="width: 138px; height: 138px; margin-top: 3px;" src="images/logon_basic/embank_ebank.png">
+                            </div>
+                        </div>
+                        <div class="code_login_area code_login_area_po dis_no" id="help_center_area" style="left: 155px;">
+                            <div>
+                                <img src="images/logon_basic/show_pic.png">
+                            </div>
+                        </div>
+                        <div class="code_login_area code_login_area_po dis_no" id="open_mb_area">
+                            <div>
+                                <img src="images/logon_basic/open_text.png">
+                            </div>
+                        </div>
+                        <div style="top: 285px; width: 510px; text-align: center; position: absolute;">
+                            <ul>
+                                <li class="mb_help_li" onmouseover="mouseOver(1)" onmouseout="mouseOut(1)" onclick="leaderToAppDown();">下载口袋财务APP</li><li class="mb_help_li" style="color: rgb(186, 186, 186);">|</li>
+                                <li class="mb_help_li" onmouseover="mouseOver(2)" onmouseout="mouseOut(2)">帮助中心</li><li class="mb_help_li" style="color: rgb(186, 186, 186);">|</li>
+                                <li class="mb_help_li" onmouseover="mouseOver(3)" onmouseout="mouseOut(3)" onclick="document.location='openMobileBank.do'">开通口袋财务业务</li>
+                            </ul>
+                        </div>
+                        <div class="picture_content">
+                            <ul>
+                                <li class="picture_content_li"><img onload="fixPNG(this)" src="images/logon_basic/advantage_icon1.png">&nbsp;免输入</li>
+                                <li class="picture_content_li"><img onload="fixPNG(this)" src="images/logon_basic/advantage_icon2.png">&nbsp;更快</li>
+                                <li class="picture_content_li"><img onload="fixPNG(this)" src="images/logon_basic/advantage_icon3.png">&nbsp;更安全</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wxmeg">
+                    <dl>
+                        <dt>温馨提示：</dt>
+                        <dd>请不要通过其它网站或电子邮件中的网页链接登录网上银行。</dd>
+                        <dd>如果连续输错三次密码，请于次日重新登录或到开户行申请重置密码。</dd>
+                        <dd>企业网银登录用户名严格区分大小写，请您输入正确的用户名。</dd>
+                        <dd>点击验证码可换一张。</dd>
+                    </dl>
+                </div>
+                <!-- <p style="margin-top:0px;margin-left:5px">
+                 <a href="mobileBankingApply.do"><img style="width:510px;height:250px;" src="img/logonPage.png" /></a>
+            </p> -->
+            </div>
+
+            <!-- 同业登录 -->
+
+            <div id="div2" style="display: none;">
+                <div class="inputBoxM">
+                    <table style="width: 450px; position: relative;" border="0" cellspacing="2" cellpadding="0">
+
+
+                        <tbody><tr><td>用&nbsp;户&nbsp;名：</td>
+                            <td class="inputnameM">&nbsp;
+
+                                <input name="userAliasText2" tabindex="1" id="userAliasText2" type="text">
+                            </td>
+                            <td rowspan="3"><a id="logonDiv2" href="javascript:doSubmit();"><img width="142" height="52" src="images_pa/enter_bt.png"></a></td>
+                        </tr>
+
+                        <tr>
+	                        <td>登录密码：</td>
+	                        <td class="inputpswdM" valign="middle" style="position: relative;">&nbsp;
+	                            <div class="security-suite-tip" style="left: 8px; top: 9px; position: absolute;"><script type="text/javascript">writePasswordCtrl('powerpass2','3','20','[\w\W]*','218','2')</script><object width="218" height="22" tabindex="2" id="powerpass2" classid="clsid:15453A26-6E82-4A6A-9B61-019AC7240420"><PARAM NAME="_Version" VALUE="65536"><PARAM NAME="_ExtentX" VALUE="576792"><PARAM NAME="_ExtentY" VALUE="58208"><PARAM NAME="_StockProps" VALUE="0"><PARAM NAME="OleBackColor" VALUE="16777215"><PARAM NAME="OleTextColor" VALUE="0"><PARAM NAME="OleBorderColor" VALUE="16777215"><PARAM NAME="backColor" VALUE=""><PARAM NAME="textColor" VALUE=""><PARAM NAME="maskChar" VALUE="*"><PARAM NAME="accepts" VALUE="[\w\W]*"><PARAM NAME="lang" VALUE="zh_CN"><PARAM NAME="maxLength" VALUE="20"><PARAM NAME="minLength" VALUE="3"><PARAM NAME="caption" VALUE="平安银行"><PARAM NAME="OleCaptionColor" VALUE="16777215"><PARAM NAME="captionFont" VALUE=""><PARAM NAME="captionSize" VALUE="0"><PARAM NAME="captionBold" VALUE="-1"><PARAM NAME="softKeyboard" VALUE="-1"><PARAM NAME="softkbdRandom" VALUE="0"><PARAM NAME="softkbdType" VALUE="0"><PARAM NAME="contentType" VALUE="0"><PARAM NAME="usbkey" VALUE="0"><PARAM NAME="X" VALUE="5"><PARAM NAME="Y" VALUE="0"><PARAM NAME="adjustTime" VALUE="1"><PARAM NAME="tokenMode" VALUE="0"><PARAM NAME="softkbdProtect" VALUE="1"><PARAM NAME="OlePlaceholderColor" VALUE="8421504"><PARAM NAME="placeholderColor" VALUE=""><PARAM NAME="placeholderText" VALUE=""><PARAM NAME="placeholderFontSize" VALUE="12"><PARAM NAME="placeholderFontName" VALUE="宋体"><PARAM NAME="textFontSize" VALUE="0"><PARAM NAME="textFontName" VALUE=""><param name="width" value="218"><param name="height" value="22"><param name="maxLength" value="20"><param name="minLength" value="3"><param name="maskChar" value="*"><param name="backColor" value="#FFFFFF"><param name="textColor" value="#000000"><param name="borderColor" value="#ffffff"><param name="accepts" value="[\w\W]*"><param name="caption" value="平安银行"><param name="captionColor" value="#ffffff"><param name="captionFont" value=""><param name="captionSize" value="0"><param name="captionBold" value="true"><param name="lang" value="zh_CN"><param name="softKeyboard" value="true"></object><object width="1" height="1" tabindex="2" id="powerpass2_UtilObject" classid="clsid:18ACDA98-568C-4DC0-9586-2F8D0A026648"><PARAM NAME="_Version" VALUE="65536"><PARAM NAME="_ExtentX" VALUE="2646"><PARAM NAME="_ExtentY" VALUE="2646"><PARAM NAME="_StockProps" VALUE="0"><PARAM NAME="adjustTime" VALUE="1"><param name="width" value="1"><param name="height" value="1"><param name="maxLength" value="16"><param name="minLength" value="6"><param name="maskChar" value="*"><param name="backColor" value="#FFFFFF"><param name="textColor" value="#000000"><param name="borderColor" value="#ffffff"><param name="accepts" value="[\w\W]*"><param name="caption" value="平安银行"><param name="captionColor" value="#ffffff"><param name="captionFont" value=""><param name="captionSize" value="0"><param name="captionBold" value="true"><param name="lang" value="zh_CN"><param name="softKeyboard" value="true"></object>
+	                            </div>
+	                        </td>
+	                        <td style="left: 310px; top: -10px; position: absolute;">
+	                        	<a href="find_password.html">找回密码</a>
+	                        </td>
+                        </tr>
+
+                        <tr><td>验&nbsp;证&nbsp;码：</td>
+                            <td class="inputcodeM" valign="middle" style="position: relative;">&nbsp;
+
+                                <input tabindex="3" id="checkCodeText2" style="top: 11px; width: 110px; position: absolute;" type="text">
+                                <img title="点击图片可刷新验证码，验证码不区分大小写" id="verifyImg2" style="top: 8px; right: 6px; vertical-align: middle; position: absolute;" onclick="this.src='VerifyImage?update=' + Math.random()"></td></tr>
+                    </tbody></table>
+
+
+                    <!-- 下拉选择登录名add by lijs 20180425 -->
+                    <select name="userAlias_select2" id="userAlias_select2" style="margin: -91px auto auto 68px; width: 225px; display: none; position: absolute; z-index: 9999;" multiple="multiple">
+                    </select>
+                </div>
+                <div class="wxmeg">
+                    <dl>
+                        <dt>温馨提示：</dt>
+                        <dd>请不要通过其它网站或电子邮件中的网页链接登录网上银行。</dd>
+                        <dd>如果连续输错三次密码，请于次日重新登录或到开户行申请重置密码。</dd>
+                    </dl>
+                </div>
+                <!-- <p style="margin-top:10px;margin-left:5px"> -->
+                <!-- <iframe id="cmsHelp6" height="53" width="406" marginWidth="0" marginHeight="0" frameborder="0"   scrolling="no" align="left" style="display:block"  src="https://ebank.sdb.com.cn/ebank/page/files/wcms/SDB/ebank/zh_CN/PersonalBanking(LC)/Others/corpbank_logon.html"></iframe> -->
+                <!-- <iframe id="orangew7" align="left"  style="margin-left:-35px" scrolling="no" frameborder="0" border="0" width="600px" src="https://my.orangebank.com.cn/orgLogin/enterpriseEBank/indexLogin.html"></iframe>
+               </p> -->
+            </div>
+
+            <!-- 快速查询区 -->
+
+            <div id="div3" style="display: none;">
+                <table width="575" class="search" style="table-layout: fixed;" border="0">
+                    <tbody><tr style="height: 190px;">
+                        <td width="250" class="qyzh" valign="top" style="padding-top: 5px;">
+                            <br><span style="font-size: 14px; margin-left: 95px;"><a style="color: rgb(0, 0, 0); text-decoration: none;" onclick="document.location='queryAccount.do'" href="#12">
+				 企业账户查询</a>
+			   	 </span>
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>使用活期账号和电话银行密码登录 </li>
+                                <li>请下载平安网银控件，以确保您的机器<br>可正常运行网上银行服务 </li>
+                                <li>可查询活期账户余额和详细交易记录 </li>
+                                <li>可查询国际业务交易记录 </li>
+                            </ul>
+                        </td>
+
+                        <td width="20" align="center" valign="middle">
+
+                        </td>
+                        <!--
+                          <td class="jyzj"  width="250" valign="top"  style="padding-top:0px;">
+                         <br/><span style="font-size:14px;"><a href='#12'  style="text-decoration:none;color:#000;margin-left:95px;display:block;"  onclick="document.location='validatePassword.do'" >
+                         交易资金查询<br/>&nbsp;&nbsp;
+                         交易所/交易中心</a>
+                          </span>
+                           <ul  class="search_infor"  style="margin-top:17px;">
+                            <li>使用交易所/交易中心资金存管账号、会<br/>员代码、查询<br/>密码登录 </li>
+                            <li>可查询交易资金账户余额和详细交易<br/>记录 </li>
+                          </ul>
+                         </td>
+                         -->
+
+                        <td width="250" class="jyzj" valign="top" style="padding-top: 0px;">
+                            <br><span style="font-size: 14px;"><a style="color: rgb(0, 0, 0); text-decoration: none; margin-left: 95px; display: block;" onclick="document.location='queryHjjytIndex.do'" href="#12">
+		                        交易资金查询<br>&nbsp;&nbsp;
+                                            互金交易通平台</a>
+	              </span>
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>互金交易通系统会员通过手机号</li>
+                                <li>登录查询会员分帐户资金台帐及</li>
+                                <li>交易记录</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr style="height: 20px;"></tr>
+                    <tr style="height: 190px;">
+                        <td class="dzhd" valign="top" style="padding-top: 5px;">
+                            <br><span style="font-size: 14px; margin-left: 90px;"><a style="color: rgb(0, 0, 0); text-decoration: none;" onclick="document.location='validateElectronicBillInput.do'" href="#12">
+				 电子回单查询</a></span>
+
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>使用电子回单号、回单验证码登录 </li>
+                                <li>可查询电子回单详细信息及验证其真伪 </li>
+                            </ul>
+                        </td>
+
+                        <td width="20" align="center" valign="middle">
+
+                        </td>
+
+
+                        <td class="tbbzj" valign="top" style="padding-top: 0px;">
+                            <br><span style="font-size: 14px;"><a style="color: rgb(0, 0, 0); text-decoration: none; margin-left: 95px; display: block;" onclick="document.location='queryEbusinessJianZheng.do'" href="#12">
+	                 交易资金查询<br>&nbsp;&nbsp;
+                     电商见证宝平台</a></span>
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>使用会员证件号和手机号登录，会 </li>
+                                <li>员可通过此功能查询账号余额及充<br>值、提现、交易记录 </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr style="height: 20px;"></tr>
+                    <tr style="height: 190px;">
+                        <td width="250" class="qyzh" valign="top" style="padding-top: 5px;">
+                            <br><span style="font-size: 14px; margin-left: 95px;"><a style="color: rgb(0, 0, 0); text-decoration: none;" onclick="document.location='querySubAccountZhiNeng.do'" href="#12">
+				智能收款子账号查询</a>
+			   	 </span>
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>使用智能收款子账号和查询密码登录</li>
+                                <li>查询对应清分子账号的余额及交易明细</li>
+                            </ul>
+                        </td>
+
+                        <td width="20" align="center" valign="middle">
+
+                        </td>
+                        <td width="250" class="dzhd" valign="top" style="padding-top: 5px;">
+                            <br>
+                            <span style="font-size: 14px; margin-left: 95px;">
+                 			<a style="color: rgb(0, 0, 0); text-decoration: none;" onclick="document.location='validateElectroStamp.do'" href="#12">电子印章查询</a>
+	              		</span>
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>使用业务验证码、凭证号码登录 </li>
+                                <li>查询使用电子印章的交易明细 </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- 产业资金入口 gebo 20160808-->
+                    <tr style="height: 20px;"></tr>
+                    <tr style="height: 190px;">
+                        <td class="qyzh" valign="top" style="padding-top: 0px;">
+                            <br><span style="font-size: 14px;">
+				 	  <a style="color: rgb(0, 0, 0); text-decoration: none; margin-left: 95px; display: block;" onclick="document.location='querySpecialFoundAccount.do'" href="#13">
+				 	  深圳市财政专项资金<br>监管系统</a>
+		   	 		</span>
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>专项资金使用效益，市财政部门委托</li>
+                                <li>具备资格的监管银行对受监管项目资金</li>
+                                <li>使用情况管理</li>
+                            </ul>
+                        </td>
+                        <td width="20" align="center" valign="middle">
+
+                        </td>
+                        <td class="qyzh" valign="top" style="padding-top: 0px;">
+                            <br><span style="font-size: 14px;"><a style="color: rgb(0, 0, 0); text-decoration: none; margin-left: 95px; display: block;" onclick="document.location='attachedStandBookBillInput.do'" href="#12">
+				 	      电商平台分账账户<br>&nbsp;&nbsp;&nbsp;明细查询</a>
+		   	 		</span>
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>使用电子单号、回单验证码登录</li>
+                                <li>可查询详细信息及验证其真伪</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr style="height: 20px;"></tr>
+                    <tr style="height: 190px;">
+                        <td class="qyzh" valign="top" style="padding-top: 0px;">
+                            <br><span style="font-size: 14px;">
+				 	  <a style="color: rgb(0, 0, 0); text-decoration: none; margin-left: 95px; display: block;" onclick="document.location='queryKzfzIndex.do'" href="#13">
+				 	  交易资金查询<br>空中分账</a>
+		   	 		</span>
+                            <ul class="search_infor" style="margin-top: 17px;">
+                                <li>使用会员证件号和手机号登录，会员可</li>
+                                <li>通过此功能查询已签约三方协议、账号</li>
+                                <li>余额及订单支付、清算等交易记录</li>
+                            </ul>
+                        </td>
+                        <td width="20" align="center" valign="middle">
+
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                    </tr>
+
+                </tbody></table>
+            </div>
+
+        </div>
+
+        <!-- 右侧导航 -->
+
+        <div class="rightCont">
+            <ul>
+                <li class="reg"><a onclick="javascript:window.open('http://bank.pingan.com/gongsi/zhuce.shtml')" href="#"><img width="212" height="102" onload="fixPNG(this)" alt="立即注册" src="images_pa/right_but1.png"></a></li>
+                <li><a href="https://ebank.sdb.com.cn/corporbank_online_demo/logon_basic.jsp" target="_blank"><img width="212" height="39" onload="fixPNG(this)" src="images_pa/right_but2.png"></a></li>
+                <li><a onclick="javascript:window.open('http://download.pingan.com.cn/bank/xiazaizhongxin/zhinan.rar')" href="#"><img width="212" height="39" onload="fixPNG(this)" src="images_pa/right_but3.png"></a></li>
+                <li><a onclick="javascript:window.open('http://download.pingan.com.cn/bank/xiazaizhongxin/sdb_bank_tools.rar')" href="#"><img width="212" height="39" onload="fixPNG(this)" src="images_pa/right_but4.png"></a></li>
+                <li><a onclick="javascript:window.open('https://ebank.sdb.com.cn/udcsra/index')" href="#"><img width="212" height="39" onload="fixPNG(this)" src="images_pa/right_but5.png"></a></li>
+                <li><a onclick="javascript:window.open('http://download.pingan.com.cn/bank/xiazaizhongxin/changjianwenti.rar')" href="#"><img width="212" height="39" onload="fixPNG(this)" src="images_pa/right_but6.png"></a></li>
+                <li><a onclick="javascript:online_corporation();" href="#"><img width="212" height="39" onload="fixPNG(this)" src="images_pa/right_but7.png"></a></li>
+                <li>&nbsp;&nbsp;&nbsp;签名控件版本&nbsp;&nbsp;&nbsp;<span id="Kii_GetVersion_ex" name="Kii_GetVersion_ex">2.3.1.0</span></li>
+                <li>&nbsp;&nbsp;&nbsp;密码控件版本&nbsp;&nbsp;&nbsp;<span id="Mi_GetVersion_ex" name="Mi_GetVersion_ex">2005023000</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <ul>
+        <li>平安银行 版权所有 Ping An Bank</li>
+        <li><span> 服务热线：95511-3信用卡服务热线：95511-2</span>　备案/许可证编号：粤ICP备11018345号</li>
+    </ul>
+</div>
+<!-- 提交表单 -->
+<form name="logonForm" action="signIn.do" method="post">
+    
+    <input name="logonLanguage" type="hidden" value="ZH_CN">
+    <input name="userAlias" type="hidden" value="2000856048@15">
+    <input name="password" type="hidden" value="CN-S4D6483BAD68EFABC9BA0A8CE76F2E61690D702581984406464804D03BC2A9E22300CEB708DC1BB2A2E64378B08B02E64BD5F7F8EC3E7FC4E350961A1B9FB1EB0FE3150C5B72326655AEFF1CAF43C94E5CC8FE0FFA59DA980829A0AD984995F7E7B9B0714C3C332C4B96BAD8060E199AA403548BA367A5BD6F9">
+    <input name="userType" type="hidden" value="2">
+    <input name="simCertDN" type="hidden" value="CN=040@0123456789@@, OU=ECCNETBANK, C=CN">
+    <input name="checkCode" type="hidden" value="m6ne">
+    <input name="passwordLevel" type="hidden" value="S">   <!--add by chengch 20150324 增加用户登入密码安全等级 -->
+    <input name="logonPageType" type="hidden" value="CP">
+    <input name="ts" type="hidden" value="1563525944584">
+    <input name="passwordEncrypted" type="hidden" value="CN-S17D4402BACF5806031721E67F10E6ABA3551E43693AE126272DA0E300484A9709CE54E98FD16002D9E8F54623DCCDDFF26056F0FDE0EF1037716533FEE632F8997F675EE6C8B23C3DAA7A2F6B6119EB6A9E31D109D25EE0C39679853058296AC557D5CCFB92609E2A5AFA90F0C3E8ED34BAE99F8071CCD275C">
+    <input name="remark" type="hidden" value="">
+    <input name="businessCode" type="hidden" value="">
+    <input name="macadd" type="hidden" value="MDAwMDAxNDABAgAAAWgAAACkAAAZ69/Fo2HugxRJaQcxK7IAQaJhilt3x6AS9i4uPvAlYqLj5jVPV+loTNh86DyRjuE68q6JWUIyomJANv7G43K4A311ZwHNp97uWuakw5pmIuaracnUYXsqLjhCo6OCFM254ZYhm1zoaLh85A06UgIpVqJngi3XGERAF1+vyDAbBDAwMDAwMDkxrhJdTkIPJ3JouyzQlIQF2K/DZtLghQPbtA7gT4zoQ22m/80eaIR4rWbrUjr3OLeudDTDwVs9Og8gFOk4KOqhmt+Bx5PVlnvvZ0N2D6ZOAHoiDucyIg8lD+JGfQ=="><!-- 包括MAC地址加密信息 -->
+<input name="sourceData" id="sourceData" type="hidden" value="00000000000000000000000000000000000000000000000000userAlias=2000856048@15&amp;checkCode=m6ne&amp;xxxxxxxxxxx=xxxxxxxxxxx&amp;CurrencyNo=XXX&amp;"><input name="signData" id="signData" type="hidden" value="C=CN, O=SDBCA, OU=SDB, OU=Enterprises, CN=SDB@G91411024MA444XLQ6B@2000856048@02183733||MIIFBgYJKoZIhvcNAQcCoIIE9zCCBPMCAQExCzAJBgUrDgMCGgUAMIGRBgkqhkiG9w0BBwGggYMEgYAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMHVzZXJBbGlhcz0yMDAwODU2MDQ4QDE1JmNoZWNrQ29kZT1tNm5lJnh4eHh4eHh4eHh4PXh4eHh4eHh4eHh4JkN1cnJlbmN5Tm89WFhYJqCCA2gwggNkMIICTKADAgECAgwSci8Uvz5ZURyoyKIwDQYJKoZIhvcNAQEFBQAwKzELMAkGA1UEBhMCQ04xDDAKBgNVBAoMA1NEQjEOMAwGA1UEAwwFU0RCQ0EwHhcNMTgwNjI4MDE0MzUwWhcNMjEwNjI3MDE0MzUwWjCBtzENMAsGA1UEBh4EAEMATjETMBEGA1UECh4KAFMARABCAEMAQTEPMA0GA1UECx4GAFMARABCMR8wHQYDVQQLHhYARQBuAHQAZQByAHAAcgBpAHMAZQBzMV8wXQYDVQQDHlYAUwBEAEIAQABHADkAMQA0ADEAMQAwADIANABNAEEANAA0ADQAWABMAFEANgBCAEAAMgAwADAAMAA4ADUANgAwADQAOABAADAAMgAxADgAMwA3ADMAMzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEApAPItEaIvKhEVi8SwsxzmYDrzyabUvmIy0Sas6dMF9C0jPNSb8HdvZtF5JzyJnoDCRHYAN7S8Q0FljvLNyLI3KmacZNUgiiNpjlc/IXgW1m+/aMnHPpJMdxxGsgF2u/5PztEvHbANHXiOtTBqXAKRSJikRmBxsDwJecCboDiX+ECAwEAAaN/MH0wDwYDVR0TAQEABAUwAwEBADAOBgNVHQ8BAQAEBAMCAPAwFAYJYIZIAYb4QgEBAQEABAQDAgCAMCIGA1UdIwEBAAQYMBaAFOymEwugQdjDgnSou3ZDKB86XBQXMCAGA1UdDgEBAAQWBBQbeuScIqVj7wZcRz+KQO6Bz8DT/jANBgkqhkiG9w0BAQUFAAOCAQEAOnXeWRwkEVYRWVabj45rbhp+AgAMBvOfTUgEe5/YWaPnC5/4vlt343q4cwUY4J17uCNAGVBO/WPXZNRYt+XT/TheJVMDf7G4q47fE58oRRcucGDVGlYrpaVh+rsMBIKGlVfp/BBuAf497nfWFXU6jC4VWgOp397nfjSfr7iQadEvdOjlRmSdmDxl5YwNjl3hBI3JNg4esZU0NVE/EkF1vq24eK/JRoGNdeLXHApeXcm8buGN0cuImBvWoVDy3VG/bY4amOi6sj5uNwHOF1t2DZe3/IUyFoDQaZqhFMv+J01odkGGCFM1J8mdtUUIFMyHQd7sS12o2M7xxGB8AH7vmjGB4DCB3QIBATA7MCsxCzAJBgNVBAYTAkNOMQwwCgYDVQQKDANTREIxDjAMBgNVBAMMBVNEQkNBAgwSci8Uvz5ZURyoyKIwCQYFKw4DAhoFADANBgkqhkiG9w0BAQEFAASBgCIiszk3Pshwd0hugYp9WAlYOl7VYaXtBvTk3lcwb6hGZsxW+8huKgsukTbazxLDh9AfdliKHwSvHSEaZAczBPJkikd5em3p5NprTNZsq4GT5CZZPEad+cqukDEoPHSYDVNVnUlwhQaFJ+w9oreNIRnxs2JCgSyc9ax1cf9PKNnZ"><input name="contextString" id="contextString" type="hidden" value="undefined"></form>
+<script type="text/javascript">writeCert()</script><object name="signx" width="100" height="50" id="signx" classid="clsid:9BA878B8-5AF3-43E6-8DB1-E7849E4C6A4B" data="data:application/x-oleobject;base64,uHiom/Na5kONseeEnkxqSwAJAADYEwAA2BMAAA==" style="display: none;"></object>
+<form name="logonQRForm" action="QRsignIn.do" method="post">
+    
+    <input name="logonLanguage" type="hidden" value="ZH_CN">
+    <input name="userType" type="hidden" value="2">
+    <input name="logonPageType" type="hidden" value="">
+    <input name="ts" type="hidden" value="1563525919101">
+    <input name="remark" type="hidden" value="">
+    <input name="businessCode" type="hidden" value="">
+    <input name="tokenKey" type="hidden" value="">
+    <input name="frontKey" type="hidden" value="">
+    <input name="FMJournalNo" type="hidden" value="">
+</form>
+
+</body></html>
+
