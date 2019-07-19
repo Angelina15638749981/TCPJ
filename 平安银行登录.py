@@ -53,28 +53,23 @@ for i in message.get('words_result'):
     print(text)
 
 try:
-    # a1 = Alert(driver)
-    # if a1:
-    #     print(a1.text)
     # 登录
     send_usr_name = driver.find_element_by_id("userAliasText")
     if send_usr_name:
         send_usr_name.send_keys("2000856048@15")
-    time.sleep(10)
-    # send_pwd = driver.find_element_by_class_name("inputpswdM")
-    # send_pwd = driver.find_element_by_class_name("security-suite-tip")
-    # send_pwd = driver.find_element_by_id("powerpass")
-    # send_pwd = driver.find_element_by_id("powerpass_UtilObject")
-    # send_pwd = driver.find_element_by_xpath("//*[@id='div_ukey'']//tr[2]/td[2]")
-    # if send_pwd:
-    #     send_pwd.send_keys("0803kkok")
-    # time.sleep(5)
-    # 识别验证码，并发送 //*[@id="div_ukey"]/table/tbody/tr[2]/td[2]
-    # send_certift_code = driver.find_element_by_id("checkCodeText")
-    # if send_certift_code:
-    #     send_certift_code.send_keys(text)
+    time.sleep(1)
+    # 发送密码 //*[@id="div_ukey"]/TABLE/TBODY/TR[2]/TD[2]
+    send_pwd = driver.find_element_by_xpath("//*[@id='div_ukey']/TABLE/TBODY/TR[2]/TD[2]//[@class='inputpswdM']")
+    if send_pwd:
+        send_pwd.send_keys("0803kkok")
+    time.sleep(5)
+    # 识别验证码，
+    send_certift_code = driver.find_element_by_id("checkCodeText")
+    if send_certift_code:
+        send_certift_code.send_keys(text)
 
     driver.find_element_by_class_name("ukey_login_btn").click()
+    # # 弹出的框 输入密码12345678
     # a1 = driver.switch_to.alert
     # print(a1.text)
     # a1.send_keys("12345678")
@@ -82,6 +77,15 @@ try:
     # a1.accept()
 
     time.sleep(5)
+    # ele_id = "duizhangBank"
+    # param = (By.ID, ele_id)
+    # 元素可见时，再进行后续操作
+    # WebDriverWait(driver, 10).until(EC.visibility_of_element_located(param))
+    # //*[@id="listItemContainer44"]//DIV/DIV[2]/DIV/DIV/DIV[1]/DIV[2]/SPAN/SPAN[2]//SPAN[@class="BPT-HTML-Value"]
+    # driver.find_element_by_id(ele_id).click()
+    # driver.find_element_by_xpath('//*[@id="listItemContainer44"]//DIV/DIV[2]/DIV/DIV/DIV[1]/DIV[2]/SPAN/SPAN[2]//SPAN[@class="BPT-HTML-Value"]').click()
+    pageSource = driver.page_source
+    print(pageSource)
     # 点击付款业务
     driver.find_element_by_id("03").click()
     # 点击支付结算
@@ -91,7 +95,7 @@ try:
     time.sleep(5)
 
 except (IndexError, Exception) as e:
-    print(e)
+    print("错误信息：%s" %e)
 
 
 
