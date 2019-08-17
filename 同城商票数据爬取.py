@@ -1,3 +1,4 @@
+import os
 import urllib
 
 import requests
@@ -20,77 +21,80 @@ headers = {
 
 nowTime = datetime.datetime.now().strftime('%Y_%m_%d')  # 现在
 
-# with open(r"C:\Users\admin\Desktop\scrapy_xici-master\xici\xici\ips_%s.txt" % nowTime) as f:
-#     content_list = f.readlines()
-#     ip_pool = [x.strip() for x in content_list]
+mkpath = r"E:\同城_商票_待接单\%s" % nowTime
+if not os.path.exists(mkpath):
+    os.mkdir(mkpath)
 
-
-# def ip_proxy():
-#     proxies = {
-#         ip_pool[-1].split(":")[0]: ip_pool[-1]
-#     }
-#     return proxies
-
-# def get_guogu_data(p_num,bid):
 def company_search(chinaCompan):
-    # 实例化 UserAgent 类
-    ua = UserAgent()
-    user_agents = ua.random
-    headers = {
-        "User-Agent": user_agents}
-    # chinaCompan ="贵州电网有限责任公司"
-    # chinaCompan ="泸州恒大南城置业有限公司"
-    # chinaCompan ="中国石油集团西部钻探工程有限公"
 
-    testUr = "https://www.qichacha.com/search?key=" + chinaCompan
-    # print("visit web: " + testUr)
 
     # 转化为机器可以识别带中文的网址，编码类型为unicode。只转换汉字部分，不能全部网址进行转换
     compan_y = urllib.parse.quote(chinaCompan)
     testUr_l = "https://www.qichacha.com/search?key=" + compan_y
-    print("visit web: " + testUr_l)
+    # print("visit web: " + testUr_l)
 
-    response = requests.post(testUr_l, headers=headers, )
+    # 模拟登录
+    request_header = {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "zh - CN, zh;q = 0.9",
+        "Connection": "keep-alive",
+        "cookie": "UM_distinctid=16b1be8a1e2c38-0f9f621b3edc7f-f353163-1fa400-16b1be8a1e3db7; _uab_collina=155954135925730288924133; zg_did=%7B%22did%22%3A%20%2216b1be8a2e6273-01efba2c0573f6-f353163-1fa400-16b1be8a2e7f8f%22%7D; QCCSESSID=q4ohvcpq9p5gv08k8ec1bgu3a7; acw_tc=7b060cd515647306746143864ea7fd58f00bdc304fe8e628eedfac20c9; hasShow=1; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1564730674,1564734854,1564968329; CNZZDATA1254842228=288073861-1564728752-https%253A%252F%252Fsp0.baidu.com%252F%7C1564995746; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1564997392; zg_de1d1a35bfa24ce29bbf2c7eb17e6c4f=%7B%22sid%22%3A%201564997229120%2C%22updated%22%3A%201564997399285%2C%22info%22%3A%201564730673632%2C%22superProperty%22%3A%20%22%7B%7D%22%2C%22platform%22%3A%20%22%7B%7D%22%2C%22utm%22%3A%20%22%7B%7D%22%2C%22referrerDomain%22%3A%20%22www.qichacha.com%22%2C%22cuid%22%3A%20%225b15623fd0abe04dd8055a3a6c8ef54f%22%7D",
+        "Host": "www.qichacha.com",
+        "Referer": "https://www.qichacha.com/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
+        'X-Requested-With': 'XMLHttpRequest'
+    }
+
+    response = requests.get(testUr_l, headers=request_header, )
     print(response.status_code)
+    response.encoding = "utf-8"
+    Html = response.text
+    html = etree.HTML(Html)
 
-    # 浏览器伪装池，将爬虫伪装成浏览器，避免被网站屏蔽
-    headers = ("User-Agent",
-               "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 SE 2.X MetaSr 1.0")
-    opener = urllib.request.build_opener()
-    opener.addheaders = [headers]
-    urllib.request.install_opener(opener)
 
-    # 爬取第一个页面，即搜索企业名字，获得访问企业信息的跳转链接
-    searchRet = urllib.request.urlopen(testUr_l).read().decode("utf-8", "ignore")
-    matchPat = 'addSearchIndex.*?href="(.*?)" target="_blank" class="ma_h1"'
-    nextUrls = re.compile(matchPat, re.S).findall(searchRet)
+    # 获取 公司 链接
+    compan_link = html.xpath('//*[@id="search-result"]/tr[1]/td[3]/a/@href')[0]
+    # print("公司链接： %s，用于获取该公司详细信息" % compan_link)
+    full_link = "https://www.qichacha.com" + compan_link
+    print(full_link)
     try:
-        nextUrl = "https://www.qichacha.com" + str(nextUrls[0])
-        print("企业详细信息可以查看下一个链接：" + nextUrl)
-
-        headers_ = {
-            'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'
-        }
-        response_ = requests.get(nextUrl, headers=headers_)
-        # print(response_.text)
-
-        response.encoding = "utf-8"
-        Html = response_.text
+        # 获得网页信息
+        response_by_full_link = requests.get(full_link, headers=request_header, )
+        print(response.status_code)
+        response_by_full_link.encoding = "utf-8"
+        Html = response_by_full_link.text
         html = etree.HTML(Html)
-        time.sleep(random.random() * 3)
+
+
         try:
-            # 股东（发起人）
-            stockholder = html.xpath('//*[@id="partnerslist"]//a/h3')[0].text.strip("\n")
-            # 持股比例
-            stock_ratio = html.xpath('//*[@id="partnerslist"]//tr[2]/td[3]')[0].text.strip("\n")
-            print("以下是%s股东信息" % chinaCompan)
-            print("股东（发起人）: %s" % stockholder)
-            print("持股比例: %s" % stock_ratio)
+
+            company_name = html.xpath('//*[@id="company-top"]/div[2]/div[2]/div[1]/h1')[0].text.replace('\n',
+                                                                                                        '').replace('\t', '').replace(' ', '')
+            print("公司名字： %s" % company_name)
+
+
+            # 官网
+            official_website = html.xpath('//*[@id="company-top"]//div[2]/div[3]/div[1]/span[3]')[0].text.replace('\n',
+                                                                                                                  '').replace(
+                '\t', '').replace(' ', '')
+            print("官网： %s" % official_website)
+
+
+
+
+
+
+
+
+
         except:
-            print("------------------该公司股东信息不存在--------------------------------------")
+            print("------------------报错--------------------------------------")
 
     except IndexError:
+
         pass
+    # return stockholder, stock_ratio
 
 
 
@@ -99,9 +103,9 @@ def get_guogu_data(pt_tradestatus, pt_bid, pageIdx_client):
                 "accept": "*/*",
                 "accept-encoding": "gzip, deflate, br",
                 "accept-language": "zh - CN, zh;q = 0.9",
-                "content-length": "307",
+                "content-length": "310",
                 "content - type": "application/x-www-form-urlencoded",
-                "cookie": "_uab_collina = 155710764840181703453248;acw_tc = 77a7faa415597160258384479eca57a735df4a746d72874024353c894a;ASP.NET_SessionId = een0mox0bwn2kkfynkqlnibo",
+                "cookie": "acw_tc=77a7fa9515626365637254600e2f9c3584ba253df2cbe978355b4c5e88; NewUserCookie=x/0ZjgxwrC2CvM/xC1lDSHx6j0JZ30d337685+F+KOUlluh1GD0x/Ik9HsEkAxyMW1gDsWCom9wGnPowo1O7TpQavAo8KNVlxD+dfhPw5HCvODIMYEYS2TJ2JnoiFzf79bdj590XsN5MVlglyxiEXw==",
                  "origin": "https://www.tcpjw.com",
                 "referer": "https://www.tcpjw.com/OrderList/TradingCenter",
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
@@ -161,7 +165,7 @@ def get_guogu_data(pt_tradestatus, pt_bid, pageIdx_client):
     # print(item10)
 
     for i in range(1, 16):
-        with open('tcpjw_shangpiao_daijiedan_%s.txt' % nowTime, 'a+') as f:
+        with open(r'E:\同城_商票_待接单\%s\商票待接单_%s.txt' % (nowTime, nowTime), 'a+') as f:
                 # 1 时间
                 item_time = html.xpath('//tr[%s]/td[1]' % i)[0].text.strip("\n")
                 # item_time_ = "2019-" + item_time.replace('.', '-')+":00"
@@ -177,12 +181,13 @@ def get_guogu_data(pt_tradestatus, pt_bid, pageIdx_client):
                 # amount = int(item_amount)
                 # 4 expire_date
                 expire_date = html.xpath('//tr[%s]/td[4]'% i)[0].text.replace('\n', '').replace('\t', '') .replace(' ', '')
-                if expire_date[-5] == "剩":
-                    days_to_expire_date = int(expire_date[-4:-1])
+                print(expire_date)
+                if expire_date[-6] == "剩":
+                    days_to_expire_date = int(expire_date[-5:-2])
+                elif expire_date[-5] == "剩":
+                    days_to_expire_date = int(expire_date[-4:-2])
                 elif expire_date[-4] == "剩":
-                    days_to_expire_date = int(expire_date[-3:-1])
-                elif expire_date[-3] == "剩":
-                    days_to_expire_date = int(expire_date[-2:-1])
+                    days_to_expire_date = int(expire_date[-3:-2])
                 # print(expire_date)
 
                 # print(days_to_expire_date)
@@ -223,13 +228,18 @@ def get_guogu_data(pt_tradestatus, pt_bid, pageIdx_client):
                 print(" 年息: %s" % annual_interest)
                 print("瑕疵: %s" % defect_spot)
                 print("操作: %s" % order_state)
+                # stockholder, stock_ratio = company_search(item_person)
+                # print("%s股东信息" % item_person )
+                # print("股东（发起人）: %s" % stockholder, "     持股比例: %s" % stock_ratio)
+
                 # 写入文件
+                # f.write(
+                #     item_time + ',' + item_person + ',' + item_amount + ',' + expire_date + ',' +
+                #     interest_every_100_thousand + ',' + annual_interest + ',' + defect_spot + ',' + order_state + ',' +stockholder+ ',' +stock_ratio+"\n")
                 f.write(
                     item_time + ',' + item_person + ',' + item_amount + ',' + expire_date + ',' +
                     interest_every_100_thousand + ',' + annual_interest + ',' + defect_spot + ',' + order_state + "\n")
 
-
-                # company_search(item_person)
 
 
 
@@ -237,7 +247,7 @@ def get_guogu_data(pt_tradestatus, pt_bid, pageIdx_client):
 if __name__ == '__main__':
     # 创建连接对象
     client = MongoClient(host='localhost', port=27017)
-    # 获得数据库，此处使用 data 同城票据 数据库
+    # 获得数据库，此处使用 data 同城票据 数据库 syf
     db = client.bank
     col = db.data
     while True:
@@ -248,5 +258,7 @@ if __name__ == '__main__':
             # time.sleep(random.random() * 3)
             # pt_tradestatus, pt_bid, pageIdx_client
             get_guogu_data(00, 8, p_num)
+    #
+    # company_search("北京中电普华信息技术有限公司")
 
-    # get_guogu_data()
+    # get_guogu_data()4000001793  602002

@@ -16,6 +16,13 @@ import time
 import hashlib
 import requests
 from selenium import webdriver
+import asyncio
+import time, random
+import requests
+from selenium import webdriver
+import requests
+import os, time, random
+requests.packages.urllib3.disable_warnings()
 
 # 时间
 nowTime = datetime.datetime.now().strftime('%Y_%m_%d')  # 现在
@@ -24,6 +31,12 @@ nowTime = datetime.datetime.now().strftime('%Y_%m_%d')  # 现在
 mkpath = r"E:\同城票据_票面信息\%s" % nowTime
 if not os.path.exists(mkpath):
     os.mkdir(mkpath)
+
+# 获取更新的cookie
+with open(r'%s_cookie.txt' % nowTime, 'r') as f:
+    cookie = f.readline()
+    print(cookie)
+
 
 def save_pic():
     # 浏览器启动设置类
@@ -45,14 +58,14 @@ def save_pic():
     return driver
 
 
-def get_pic(tradeno,msw):
+def get_pic(tradeno, msw):
     headers = {
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br",
         "accept-language": "zh-CN,zh;q=0.9",
         "content-length": "31",
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "cookie": "_uab_collina=155710764840181703453248; acw_tc=77a7faa415597160258384479eca57a735df4a746d72874024353c894a; ASP.NET_SessionId=5zkqaghowflouywfqqzv0g0y; NewUserCookie=x/0ZjgxwrC3BpTI/uMstsZkSgxjYFwiyL4ebBSoX6w103ZF0Py8bIqKrEBZKj3fL9c2NnXRyZqM3uXk8TSOIv8YirCUjH221Oqxgz5AfRT/RCvHxzGWekTX57seRfepS5PohPKnPAYnYa7HYa52HnOoxyrbeEWFfpaLmgU/2kKvbhaNAVgUbVgHo8t1zgy9iXyorwo/OitGt5APeK0qwIledDuosOZ6LHOK8TjIzphbqs94JDBN6ub0KwxlJOR5QULf7XbaX9yEPb8R9Pb+NdAb/xGZOyhby",
+        "cookie": cookie,
         "origin": "https://www.tcpjw.com",
         "referer": "https://www.tcpjw.com/OrderList/TradingCenter",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
@@ -74,14 +87,16 @@ def get_pic(tradeno,msw):
         # print(response.status_code)
         # if pt_tradestatus=="22":
         Html = response.text
-        print(Html)
+        # print(Html)
         html = eval(Html)
         pic_link = html["t_face"]
         print(pic_link)
         # raise KeyError("'t_face")
+        # raise SSLError("Unexpected EOF")
 
 
-    except (KeyError,IndexError) as e:
+
+    except(KeyError,IndexError,Exception) as e:
         print(e)
         # pass
     return pic_link
@@ -91,10 +106,11 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
     headers = {
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br",
-        "accept-language": "zh - CN, zh;q = 0.9",
-        "content-length": "325",
+        "accept-language": "zh - CN, zh;q =0.9",
+        "content-length": "309",
         "content - type": "application/x-www-form-urlencoded",
-        "cookie": "_uab_collina=155710764840181703453248; acw_tc=77a7faa415597160258384479eca57a735df4a746d72874024353c894a; ASP.NET_SessionId=5zkqaghowflouywfqqzv0g0y; NewUserCookie=x/0ZjgxwrC3BpTI/uMstsZkSgxjYFwiyL4ebBSoX6w103ZF0Py8bIqKrEBZKj3fL9c2NnXRyZqM3uXk8TSOIv8YirCUjH221Oqxgz5AfRT/RCvHxzGWekTX57seRfepS5PohPKnPAYnYa7HYa52HnOoxyrbeEWFfpaLmgU/2kKvbhaNAVgUbVgHo8t1zgy9iXyorwo/OitGt5APeK0qwIledDuosOZ6LHOK8TjIzphbqs94JDBN6ub0KwxlJOR5QULf7XbaX9yEPb8R9Pb+NdAb/xGZOyhby",
+        "cookie": cookie,
+        # "cookie": "_uab_collina=155710764840181703453248; acw_tc=77a7faa415597160258384479eca57a735df4a746d72874024353c894a; NewUserCookie=x/0ZjgxwrC3BpTI/uMstsZkSgxjYFwiya39OHdOgT5G1vHfmqDd6KAsR8s0OUV/thXejTQ/RJWjKGBbD3mOmVSbZ2JjHtArsX4ceeif6sxRyEr3tAVGfype4oLBq89Beavs9rNM/6NASpPxBXhd8D3m8EqNkML4piXLOwtUpH7SmtMplSwiMjxQsbBn9q/vfBLzhYoLz3vd5UuNca1WqhKkJ++rmXUZdLU3wt748v0YrBTMHSCkPymSrRkp12OEJ7OXVQh2S6zwVeqspNpPT/kwdeX5SHaL6",
         "origin": "https://www.tcpjw.com",
         "referer": "https://www.tcpjw.com/OrderList/TradingCenter",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
@@ -125,12 +141,12 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
         time.sleep(random.random() * 3)
         response.encoding = "utf-8"
         Html = response.text
-
+        # print(Html)
         html = etree.HTML(Html)
         #
 
         for i in range(1, 16):
-            with open('同城票据_接单中票面信息_%s.txt' % nowTime, 'a+') as f:
+            with open(r'E:\同城票据_票面信息\同城票据_接单中_票面信息_%s.txt' % nowTime, 'a+') as f:
                 # 1 时间
                 item_time = html.xpath('//tr[%s]/td[1]' % i)[0].text.strip("\n")
                 time_pic_needed = str(item_time[-5])+str(item_time[-4])+str(item_time[-2])+str(item_time[-1])
@@ -152,12 +168,12 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
                 # 4 expire_date
                 expire_date = html.xpath('//tr[%s]/td[4]' % i)[0].text.replace('\n', '').replace('\t', '').replace(' ',
                                                                                                                    '')
-                if expire_date[-5] == "剩":
-                    days_to_expire_date = int(expire_date[-4:-1])
+                if expire_date[-6] == "剩":
+                    days_to_expire_date = int(expire_date[-5:-2])
+                elif expire_date[-5] == "剩":
+                    days_to_expire_date = int(expire_date[-4:-2])
                 elif expire_date[-4] == "剩":
-                    days_to_expire_date = int(expire_date[-3:-1])
-                elif expire_date[-3] == "剩":
-                    days_to_expire_date = int(expire_date[-2:-1])
+                    days_to_expire_date = int(expire_date[-3:-2])
                 # print(expire_date)
                 # print(days_to_expire_date)
                 # 5 interest_every_100_thousand
@@ -196,7 +212,7 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
                 # else:
                 #     order_state = 0
                 # 获取参数
-                tradeno = html.xpath('//tr[%s]/td[10]/div/@id'% i)[0]
+                tradeno = html.xpath('//tr[%s]/td[10]/div/@id' % i)[0]
                 tradeno_ = tradeno[-14:]
                 # 获取interest_every_100_thousand 带四位小数
                 interest_every_100_thousand_with_4_ = html.xpath('//tr[%s]/td[10]/div/a/@onclick'% i)
@@ -209,7 +225,7 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
                 elif len(str(interest_every_100_thousand_with_4_[0][25:-1])) == 10:
                     interest_every_100_thousand_msw = str(interest_every_100_thousand_with_4_[0][25:-3])
 
-                time.sleep(1)
+                # time.sleep(1)
                 # 保存图片
                 pic_link = get_pic(tradeno_, interest_every_100_thousand_msw)
                 driver = save_pic()
@@ -244,9 +260,9 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
 
                 f.write(
                     item_time + ',' + item_person + ',' + item_amount + ',' + expire_date + ',' +
-                    interest_every_100_thousand+ ',' + annual_interest + ',' + defect_spot + ',' +tradeno_+ ',' + pic_link + "\n")
+                    interest_every_100_thousand + ',' + annual_interest + ',' + defect_spot + ',' +tradeno_+ ',' + pic_link + "\n")
     # UnboundLocalError: local variable 'pic_link' referenced before assignment
-    except (IndexError, UnboundLocalError) as e:
+    except (IndexError, UnboundLocalError, Exception) as e:
         # raise e
         print(e)
         # pass
@@ -255,16 +271,19 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
 
 
 if __name__ == '__main__':
+
     # 创建连接对象
     client = MongoClient(host='localhost', port=27017)
-    # 获得数据库，此处使用 data 同城票据 数据库
+    # 获得数据库，此处使用 data 同城票据 数据库 https://github.com/Angelina15638749981/TCPJ.git
     db = client.bank
     col = db.data
+
     while True:
-        for pageIdx_client in range(1, 40):
+        for pageIdx_client in range(1, 4):
             # pt_keywords,pt_tradestatus, pt_bid, pageIdx_client
             print("--------------------爬取第%s页数据-----------------------------------------------------------" % pageIdx_client)
-            get_data_from_tcpj("", "00", "", pageIdx_client)
+            get_data_from_tcpj("", "00", "", pageIdx_client,)
+            time.sleep(2)
 
 
 #13213242228

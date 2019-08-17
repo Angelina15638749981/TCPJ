@@ -52,7 +52,7 @@ def get_pic(tradeno,msw):
         "accept-language": "zh-CN,zh;q=0.9",
         "content-length": "31",
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "cookie": "_uab_collina=155710764840181703453248; acw_tc=77a7faa415597160258384479eca57a735df4a746d72874024353c894a; ASP.NET_SessionId=5zkqaghowflouywfqqzv0g0y; NewUserCookie=x/0ZjgxwrC3BpTI/uMstsZkSgxjYFwiyL4ebBSoX6w103ZF0Py8bIqKrEBZKj3fL9c2NnXRyZqM3uXk8TSOIv8YirCUjH221Oqxgz5AfRT/RCvHxzGWekTX57seRfepS5PohPKnPAYnYa7HYa52HnOoxyrbeEWFfpaLmgU/2kKvbhaNAVgUbVgHo8t1zgy9iXyorwo/OitGt5APeK0qwIledDuosOZ6LHOK8TjIzphbqs94JDBN6ub0KwxlJOR5QULf7XbaX9yEPb8R9Pb+NdAb/xGZOyhby",
+        "cookie": "_uab_collina=156202999478129943827298;acw_tc=77a7faa315620299954625744eb298147a7cc07683a772cc1c23a884ff;NewUserCookie=x/0ZjgxwrC3BpTI/uMstsZkSgxjYFwiy53nvAx0QK3ZEkkAPtl+xIOY1nBLa0qZfe2FMG+Wf8/7JJ9tPHvVtvYjxRKtMJAr2Fht/HYQ5FLW32HfOX2SjJaUGpfGlTUA7JoTKLnsXGwN6CJv8XVUrE8g1XngCRl3OOpgpbu2krOQZFr/a/kGHLwseGA+uUDLWhFm28meQOh1QtD1u2bDYnYlaxD/TqjDzP98oNHZaweZCT0gBIhg/NLYiu2rqqoWlzfyrXZpIilWdrbGSBx22ZSgJDD0J+mX2",
         "origin": "https://www.tcpjw.com",
         "referer": "https://www.tcpjw.com/OrderList/TradingCenter",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
@@ -81,7 +81,7 @@ def get_pic(tradeno,msw):
         # raise KeyError("'t_face")
 
 
-    except (KeyError,IndexError) as e:
+    except (KeyError,IndexError,Exception) as e:
         print(e)
         # pass
     return pic_link
@@ -94,7 +94,7 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
         "accept-language": "zh - CN, zh;q = 0.9",
         "content-length": "325",
         "content - type": "application/x-www-form-urlencoded",
-        "cookie": "_uab_collina=155710764840181703453248; acw_tc=77a7faa415597160258384479eca57a735df4a746d72874024353c894a; ASP.NET_SessionId=5zkqaghowflouywfqqzv0g0y; NewUserCookie=x/0ZjgxwrC3BpTI/uMstsZkSgxjYFwiyL4ebBSoX6w103ZF0Py8bIqKrEBZKj3fL9c2NnXRyZqM3uXk8TSOIv8YirCUjH221Oqxgz5AfRT/RCvHxzGWekTX57seRfepS5PohPKnPAYnYa7HYa52HnOoxyrbeEWFfpaLmgU/2kKvbhaNAVgUbVgHo8t1zgy9iXyorwo/OitGt5APeK0qwIledDuosOZ6LHOK8TjIzphbqs94JDBN6ub0KwxlJOR5QULf7XbaX9yEPb8R9Pb+NdAb/xGZOyhby",
+        "cookie": "_uab_collina=156202999478129943827298;acw_tc=77a7faa315620299954625744eb298147a7cc07683a772cc1c23a884ff;NewUserCookie=x/0ZjgxwrC3BpTI/uMstsZkSgxjYFwiy53nvAx0QK3ZEkkAPtl+xIOY1nBLa0qZfe2FMG+Wf8/7JJ9tPHvVtvYjxRKtMJAr2Fht/HYQ5FLW32HfOX2SjJaUGpfGlTUA7JoTKLnsXGwN6CJv8XVUrE8g1XngCRl3OOpgpbu2krOQZFr/a/kGHLwseGA+uUDLWhFm28meQOh1QtD1u2bDYnYlaxD/TqjDzP98oNHZaweZCT0gBIhg/NLYiu2rqqoWlzfyrXZpIilWdrbGSBx22ZSgJDD0J+mX2",
         "origin": "https://www.tcpjw.com",
         "referer": "https://www.tcpjw.com/OrderList/TradingCenter",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
@@ -246,7 +246,7 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
                     item_time + ',' + item_person + ',' + item_amount + ',' + expire_date + ',' +
                     interest_every_100_thousand+ ',' + annual_interest + ',' + defect_spot + ',' +tradeno_+ ',' + pic_link + "\n")
     # UnboundLocalError: local variable 'pic_link' referenced before assignment
-    except (IndexError, UnboundLocalError) as e:
+    except (IndexError, UnboundLocalError, Exception) as e:
         # raise e
         print(e)
         # pass
@@ -261,7 +261,7 @@ if __name__ == '__main__':
     # db = client.bank
     # col = db.data
     while True:
-        for pageIdx_client in range(1, 40):
+        for pageIdx_client in range(1, 4):
             # pt_keywords,pt_tradestatus, pt_bid, pageIdx_client
             print("--------------------爬取第%s页数据-----------------------------------------------------------" % pageIdx_client)
             get_data_from_tcpj("郑州", "00", "", pageIdx_client)

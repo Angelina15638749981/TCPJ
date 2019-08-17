@@ -28,3 +28,6 @@
 [0604/110606.731:ERROR:exception_snapshot_win.cc(98)] thread ID 7220 not found in process
 [0604/113323.958:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
 [0604/113323.959:ERROR:exception_snapshot_win.cc(98)] thread ID 6968 not found in process
+[0719/104139.022:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0802/095611.425:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[0802/095611.427:ERROR:exception_snapshot_win.cc(98)] thread ID 18764 not found in process

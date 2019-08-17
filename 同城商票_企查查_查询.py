@@ -8,9 +8,13 @@ from lxml import etree
 from pymongo import MongoClient
 from bs4 import BeautifulSoup
 import requests
+requests.packages.urllib3.disable_warnings()
 import time
 import datetime
-
+from fake_useragent import UserAgent
+# 实例化 UserAgent 类
+ua = UserAgent()
+user_agent=ua.random
 # 创建连接对象
 client = MongoClient(host='localhost', port=27017)
 # 获得数据库，此处使用 data
@@ -34,24 +38,28 @@ request_header = {
     "Host": "www.qichacha.com",
     "Referer": "https://www.qichacha.com/",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
+    # "User-Agent": user_agent,
     'X-Requested-With': 'XMLHttpRequest'
 }
 
 request_header_ = {
-    "Accept": "*/*",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Encoding": "gzip, deflate, br",
-    "Accept-Language": "zh - CN, zh;q = 0.9",
+    "Accept-Language": "zh-CN",
     "Connection": "keep-alive",
     "cookie": cookie,
     "Host": "www.qichacha.com",
     "Referer": "https://www.qichacha.com/",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
+
+    # "User-Agent": user_agent,
     'X-Requested-With': 'XMLHttpRequest'
 }
 link = "https://www.qichacha.com/#area"
 # 获得网页信息
-response = requests.get(link, headers=request_header, )
-# print(response.status_code)
+response = requests.get(link, headers=request_header,verify=False )
+print(response.status_code)
+
 # print(response.text)
 response.encoding = "utf-8"
 Html = response.text
@@ -69,7 +77,7 @@ for i in range(1, 2):
     # https://www.qichacha.com/g_BJ
     full_province_addr_link = "https://www.qichacha.com" + province_addr_link
     # 请求上边的链接
-    response_by_province_addr_link = requests.get(full_province_addr_link, headers=request_header_, )
+    response_by_province_addr_link = requests.get(full_province_addr_link, headers=request_header_,verify=False)
     # print(response_by_province_addr_link.text)
     response_by_province_addr_link.encoding = "utf-8"
     Html = response_by_province_addr_link.text
@@ -101,7 +109,7 @@ for province in province_ls:
     # print(full_province_link)
     # print("--------------------------------------%s------------------------------------" % province)
     # 获取市级link
-    response = requests.get(full_province_link, headers=request_header, )
+    response = requests.get(full_province_link, headers=request_header,verify=False)
     soup = BeautifulSoup(response.text, 'html.parser')
     list = soup.findAll(class_='pills-item')
     # print(list) 0-31 provinces  32-end districts
@@ -122,144 +130,151 @@ for province in province_ls:
                 print(full_page_link)
                 # 获取公司链接
                 # 进入每一页，获取公司链接和公司详细信息
-                response_by_page_link = requests.get(full_page_link, headers=request_header_, )
+                response_by_page_link = requests.get(full_page_link, headers=request_header_, verify=False )
 
                 response_by_page_link.encoding = "utf-8"
                 Html = response_by_page_link.text
                 html_page = etree.HTML(Html)
                 time.sleep(3)
 
-                for y in range(1, 3):
+                for y in range(1, 11):
                     print("------------------------------第%s个企业--------------------" % y )
                     company_link = html_page.xpath('//*[@id="searchlist"]//tr[%s]/td[2]/a/@href' % y)[0]
                     full_company_link = "https://www.qichacha.com" + company_link
                     # print(full_company_link)
                     # 获取公司链接和公司详细信息
-                    response_by_company_link = requests.get(full_company_link, headers=request_header, )
-                    # print(response_by_company_link.status_code)
-                    # if str(response_by_company_link.status_code) == "200":
-                    #     print("----------------------第3次requests请求成功------------获取企业详细信息-------------------")
-                    # else:
-                    #     print("----------------------第3次requests请求失败-------------获取企业详细信息------------------")
-                    response_by_company_link.encoding = "utf-8"
-                    Html = response_by_company_link.text
-                    html = etree.HTML(Html)
+                    response_by_company_link = requests.get(full_company_link, headers=request_header,verify=False )
+                    soup_comp = BeautifulSoup(response_by_company_link.text, 'xml')
+                    # soup_comp.find_all(class_="content")
+                    # 基本信息获取
+                    # if
+                    # print(soup_comp.find_all(class_="row title"))
+                    #       row title jk-tip
+                    # print(soup_comp.find_all(class_=" row title jk-tip"))
+
+                    print("-----------------------------------------------------")
 
 
-                    try:
-                        # 根据风险扫描来判断 页面内容，在进行抓取
-                        judgement_basis = html.xpath('//*[@id="base_title"]/h2/text()')[0]
-                        if judgement_basis:
-                            print(judgement_basis)
-                            print("----------------------------------------属于第二种页面---------------信息丰富--------------------------------------------")
+                    # 基本信息 h1 
+                    company_name = soup_comp.find_all("div", {"class": "content"})[0].find("h1").text
+                    print(company_name)
+                    # 电话
+                    phone_number = soup_comp.find_all("div", {"class": "content"})[0].select('span .cvlu')[0].text
+                    print(phone_number)
+                    # 官网
+                    official_website =soup_comp.find_all("div", {"class": "content"})[0].select('span .cvlu')[1].text
+                    print(official_website)
 
-                    except IndexError as e:
-                        # print(e)
-                        # 详细信息
-                        # 基本信息
-                        # 公司名字
-                        print("------------------------------------------第一种页面-------------------------信息较少------------------------------------------")
-                        company_name = html.xpath('//*[@id="company-top"]/div[2]/div[2]/div[1]/h1')[0].text.replace('\n', '').replace('\t','').replace(' ','')
+                    # 邮箱
+                    email_addree =soup_comp.find_all("div", {"class": "content"})[0].select('span .cvlu')[2].text
+                    print(email_addree)
 
-                        # 电话
-                        phone_number = html.xpath('//*[@id="company-top"]//div[2]/div[3]/div[1]/span[1]/span[2]')[0].text.replace('\n', '').replace('\t','').replace(' ','')
+                    # 地址
+                    address=soup_comp.find_all("div", {"class": "content"})[0].select('span .cvlu')[2].text
+                    print(address)
 
-                        # 官网
-                        official_website = html.xpath('//*[@id="company-top"]//div[2]/div[3]/div[1]/span[3]')[0].text.replace('\n', '').replace('\t','').replace(' ','')
-
-                        # 邮箱
-                        email_addree = html.xpath('//*[@id="company-top"]//div[2]/div[3]/div[2]/span[1]/span[2]')[0].text.replace('\n', '').replace('\t','').replace(' ','')
+                    """
 
 
-
-                        # 工商信息
-                        # 经营者  有问题
-                        person = html.xpath('//*[@id="Cominfo"]/table/td[1]')[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 经营状态
-                        running_state = html.xpath('//*[@id="Cominfo"]/table/tr[2]/td[2]')[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 成立日期
-                        starting_time = html.xpath('//*[@id="Cominfo"]/table/tr[2]/td[4]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 注册号
-                        register_number = html.xpath('//*[@id="Cominfo"]/table/tr[4]/td[2]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 企业类型
-                        company_type = html.xpath('//*[@id="Cominfo"]/table/tr[5]/td[2]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 所属行业
-                        belong_to = html.xpath('//*[@id="Cominfo"]/table/tr[5]/td[4]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-
-                        # 核准日期
-                        check_date = html.xpath('//*[@id="Cominfo"]/table/tr[6]/td[2]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 登记机关
-                        register_institute = html.xpath('//*[@id="Cominfo"]/table/tr[6]/td[4]' )[0].text.replace('\n', '').replace('\t', '').replace(' ','')
-                        # 所属地区
-                        belong_to_area = html.xpath('//*[@id="Cominfo"]/table/tr[7]/td[2]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 营业期限
-                        running_date_limition = html.xpath('//*[@id="Cominfo"]/table/tr[9]/td[4]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 企业地址
-                        company_addr = html.xpath('//*[@id="Cominfo"]/table/tr[10]/td[2]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-                        # 经营范围
-                        running_state = html.xpath('//*[@id="Cominfo"]/table/tr[11]/td[2]' )[0].text.replace('\n', '').replace('\t','').replace(' ','')
-
-
-                        # 变更记录
-                        # 序号一
-                        # 变更日期
-                        # running_date_limition = html.xpath('//*[@id="searchlist"]//tr[%s]/td[2]/a/@href' % y)[0]
-                        # print(person)
-                        # # 变更项目
-                        # company_addr = html.xpath('//*[@id="searchlist"]//tr[%s]/td[2]/a/@href' % y)[0]
-                        # print(person)
-                        # # 变更前
-                        # running_state = html.xpath('//*[@id="searchlist"]//tr[%s]/td[2]/a/@href' % y)[0]
-                        # print(person)
-                        # # 序号二
-                        # # 变更日期
-                        # running_date_limition = html.xpath('//*[@id="searchlist"]//tr[%s]/td[2]/a/@href' % y)[0]
-                        # print(person)
-                        # # 变更项目
-                        # company_addr = html.xpath('//*[@id="searchlist"]//tr[%s]/td[2]/a/@href' % y)[0]
-                        # print(person)
-                        # # 变更前
-                        # running_state = html.xpath('//*[@id="searchlist"]//tr[%s]/td[2]/a/@href' % y)[0]
-
-                        print("公司名字： %s" % company_name)
-                        print("电话： %s" % phone_number)
-                        print("官网： %s" % official_website)
-                        print("邮箱： %s" % email_addree)
-                        print("经营者： %s" % person)
-                        print("经营状态： %s" % running_state)
-                        print("成立日期： %s" % starting_time)
-                        print("注册号： %s" % register_number)
-                        print("企业类型： %s" % company_type)
-                        print("所属行业： %s" % belong_to)
-                        print("核准日期： %s" % check_date)
-                        print("登记机关： %s" % register_institute)
-                        print("所属地区： %s" % belong_to_area)
-                        print("营业期限： %s" % running_date_limition)
-                        print("企业地址： %s" % company_addr)
-                        print("经营范围： %s" % running_state)
+                    # 工商信息
+                    # 法定代表人
+                    person =
+                    #注册资本
+                    register_asset=
+                    # 实缴资本
+                    paid_in_capital=
+                    # 经营状态
+                    running_state =
+                    # 成立日期
+                    starting_time =
+                    # 统一社会信用代码
+                    unified_social_credit_code=
+                    # 纳税人识别号
+                    ditinguish_number=
+                    # 注册号
+                    register_number =
+                    # 组织机构代码
+                    organization_code=
+                    # 企业类型
+                    company_type =
+                    # 所属行业
+                    belong_to =
+                    # 核准日期
+                    check_date =
+                    # 登记机关
+                    register_institute =
+                    # 所属地区
+                    belong_to_area =
+                    # 英文名
+                    # English_name=
+                    # 曾用名
+                    used_name=
+                    # 参保人数
+                    numbers_of_insurance=
+                    # 人员规模
+                    staff_size=
+                    # 营业期限
+                    running_date_limition =
+                    # 企业地址
+                    company_addr =
+                    # 经营范围
+                    running_state =
 
 
-                        # 向集合同城票据中插入一条文档
-                        data_ = [{"company_name": company_name,
-                                  " phone_number": phone_number,
-                                  'official_website': official_website,
-                                  'email_addree': email_addree,
-                                  'person': person,
-                                  'running_state': running_state,
-                                  'starting_time': starting_time,
-                                  'register_number': register_number,
-                                  'company_type': company_type,
-                                  'belong_to': belong_to,
-                                  "check_date": check_date,
-                                  'register_institute': register_institute,
-                                  "belong_to_area": belong_to_area,
-                                  'running_date_limition': running_date_limition,
-                                  "company_addr": company_addr,
-                                  'running_state': running_state,
-                                  }]
 
-                        # for item in data_:
-                        #     col.insert_one(item)
+                    #股东信息
+                    #股东1及出资信息
+                    #
+                    # 持股比例
+                    #
+                    #认缴出资额(万元)
+                    #
+                    # 认缴出资日期
+                    #
+                    # 关联产品/机构
+                    #
+
+                    # 股东2及出资信息
+                    #
+                    # 持股比例
+                    #
+                    # 认缴出资额(万元)
+                    #
+                    # 认缴出资日期
+                    #
+                    # 关联产品/机构
+                    #
+
+
+
+                    # 主要人员
+                    # 姓名1
+                    #
+                    # 职务
+                    #
+                    # 姓名2
+                    #
+                    # 职务
+                    #
+                    # 姓名3
+                    #
+                    # 职务
+                    #
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

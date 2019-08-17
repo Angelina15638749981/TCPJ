@@ -7,6 +7,7 @@ from selenium import webdriver
 import requests
 import os, time, random
 import asyncio
+import datetime
 
 async def main(username, pwd, url):
     # 以下使用await 可以针对耗时的操作进行挂起
@@ -46,23 +47,27 @@ async def main(username, pwd, url):
 
 
 
-
+# 时间
+nowTime = datetime.datetime.now().strftime('%Y_%m_%d')  # 现在
 # 获取登录后cookie
 async def get_cookie(page):
     # res = await page.content()
-    cookies_list = await page.cookies()
-    # print(cookies_list)
-    cookies = ''
-    for cookie in cookies_list:
-        str_cookie = '{0}={1};'
-        str_cookie = str_cookie.format(cookie.get('name'), cookie.get('value'))
-        cookies += str_cookie
-    print(cookies_list[0]["name"], cookies_list[0]["value"])
-    print(cookies_list[1]["name"], cookies_list[1]["value"])
-    print(cookies_list[2]["name"], cookies_list[0]["value"])
-    cookie_full = cookies_list[0]["name"]+"="+cookies_list[0]["value"]+";"+cookies_list[1]["name"]+"="+cookies_list[1]["value"]+";"+cookies_list[2]["name"]+"="+cookies_list[2]["value"]
-    print(cookie_full)
-    return cookie_full
+    with open("%s_cookie.txt" % nowTime, "w") as f:
+        cookies_list = await page.cookies()
+        # print(cookies_list)
+        cookies = ''
+        for cookie in cookies_list:
+            str_cookie = '{0}={1};'
+            str_cookie = str_cookie.format(cookie.get('name'), cookie.get('value'))
+            cookies += str_cookie
+        print(cookies_list[0]["name"], cookies_list[0]["value"])
+        print(cookies_list[1]["name"], cookies_list[1]["value"])
+        print(cookies_list[2]["name"], cookies_list[0]["value"])
+        cookie_full = cookies_list[0]["name"]+"="+cookies_list[0]["value"]+";"+cookies_list[1]["name"]+"="+cookies_list[1]["value"]+";"+cookies_list[2]["name"]+"="+cookies_list[2]["value"]
+        print(cookie_full)
+        f.write(cookie_full)
+        return cookie_full
+
 
 
 def retry_if_result_none(result):
