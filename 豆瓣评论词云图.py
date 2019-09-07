@@ -9,7 +9,7 @@ from wordcloud import WordCloud
 import PIL.Image as image  #引入读取图片的工具
 import numpy as np
 import jieba   # 分词
-
+requests.packages.urllib3.disable_warnings()
 
 #获取html源代码
 def getPage(url):
@@ -18,14 +18,14 @@ def getPage(url):
                      " AppleWebKit/537.36 (KHTML, like Gecko)"
                      " Chrome/63.0.3239.132 Safari/537.36"
     }
-    response = requests.get(url,headers = headers).text
+    response = requests.get(url,headers = headers, verify=False).text
     return response
 
 
 #获得所有页面
 def all_page():
     # 26849758  长安十二时辰
-    base_url = "https://movie.douban.com/subject/26946624/comments?start="
+    base_url = "https://movie.douban.com/subject/26584183/comments?start="
     #列表存放所有的网页，共10页
     urllist = []
     for page in range(0, 200, 20):
@@ -55,7 +55,7 @@ def parse():
 def save_to_txt():
     result = parse()
     for i in range(len(result)):
-        with open('小欢喜评论集.txt','a+',encoding='utf-8') as f:
+        with open('权力的游戏第八季评论集.txt','a+',encoding='utf-8') as f:
             f.write(str(result[i])+'\n')  #按行存储每一页的数据
             f.close()
 
@@ -70,8 +70,8 @@ def trans_CN(text):
 
 # 制作词云
 def getWordCloud():
-    path_txt = "小欢喜评论集.txt"
-    path_jpg = "1.jpg"
+    path_txt = "权力的游戏第八季评论集.txt"
+    path_jpg = "2.jpg"
     path_font = "C:\\Windows\\Fonts\\msyh.ttc"
 
     text = open(path_txt, encoding='utf-8').read()
@@ -93,13 +93,13 @@ def getWordCloud():
     text = trans_CN(text)
     mask = np.array(image.open(path_jpg))  #词云背景图案
     wordcloud = WordCloud(
-        background_color='black',
+        background_color='white',
         mask=mask,
         scale=15,
         max_font_size=80,
         font_path=path_font
     ).generate(text)
-    wordcloud.to_file('小欢喜评论词云.jpg')
+    wordcloud.to_file('权利的游戏评论词云.jpg')
 
 
 #主函数

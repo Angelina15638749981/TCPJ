@@ -39,8 +39,7 @@ def company_search(chinaCompan):
         "Accept-Encoding": "gzip, deflate, br",
         "Accept-Language": "zh - CN, zh;q = 0.9",
         "Connection": "keep-alive",
-        "cookie": "UM_distinctid=16b1be8a1e2c38-0f9f621b3edc7f-f353163-1fa400-16b1be8a1e3db7; _uab_collina=155954135925730288924133; zg_did=%7B%22did%22%3A%20%2216b1be8a2e6273-01efba2c0573f6-f353163-1fa400-16b1be8a2e7f8f%22%7D; QCCSESSID=q4ohvcpq9p5gv08k8ec1bgu3a7; acw_tc=7b060cd515647306746143864ea7fd58f00bdc304fe8e628eedfac20c9; hasShow=1; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1564730674,1564734854,1564968329; CNZZDATA1254842228=288073861-1564728752-https%253A%252F%252Fsp0.baidu.com%252F%7C1564995746; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1564997392; zg_de1d1a35bfa24ce29bbf2c7eb17e6c4f=%7B%22sid%22%3A%201564997229120%2C%22updated%22%3A%201564997399285%2C%22info%22%3A%201564730673632%2C%22superProperty%22%3A%20%22%7B%7D%22%2C%22platform%22%3A%20%22%7B%7D%22%2C%22utm%22%3A%20%22%7B%7D%22%2C%22referrerDomain%22%3A%20%22www.qichacha.com%22%2C%22cuid%22%3A%20%225b15623fd0abe04dd8055a3a6c8ef54f%22%7D",
-        "Host": "www.qichacha.com",
+        "cookie": "_uab_collina=155710764840181703453248; acw_tc=24f9419915668933329793630e96aed17e47a82d7338cc5dc1becd5c78; acw_sc__v2=5d6f6af92f373a0789dcfafaed3d388bbb2c2765; acw_sc__v3=5d6f6afed25ff6270f2cd4b709fc81fd4998318b; NewUserCookie=x/0ZjgxwrC2CvM/xC1lDSHx6j0JZ30d337685+F+KOUlluh1GD0x/Ik9HsEkAxyMW1gDsWCom9wGnPowo1O7TpQavAo8KNVlxD+dfhPw5HCvODIMYEYS2TJ2JnoiFzf79bdj590XsN5MVlglyxiEXw==",
         "Referer": "https://www.qichacha.com/",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",
         'X-Requested-With': 'XMLHttpRequest'
@@ -50,6 +49,7 @@ def company_search(chinaCompan):
     print(response.status_code)
     response.encoding = "utf-8"
     Html = response.text
+    print(Html)
     html = etree.HTML(Html)
 
 
@@ -105,7 +105,7 @@ def get_guogu_data(pt_tradestatus, pt_bid, pageIdx_client):
                 "accept-language": "zh - CN, zh;q = 0.9",
                 "content-length": "310",
                 "content - type": "application/x-www-form-urlencoded",
-                "cookie": "acw_tc=77a7fa9515626365637254600e2f9c3584ba253df2cbe978355b4c5e88; NewUserCookie=x/0ZjgxwrC2CvM/xC1lDSHx6j0JZ30d337685+F+KOUlluh1GD0x/Ik9HsEkAxyMW1gDsWCom9wGnPowo1O7TpQavAo8KNVlxD+dfhPw5HCvODIMYEYS2TJ2JnoiFzf79bdj590XsN5MVlglyxiEXw==",
+                "cookie": "_uab_collina=155710764840181703453248; acw_tc=77a7faa415650840058478851e52f63ee27400ac15372d5c7cac79d591; ASP.NET_SessionId=b55cmfzwdhkq0hitlfzfq3jj; acw_sc__v2=5d63833628380047be13bfb293864d02a6f472ca; acw_sc__v3=5d63833e88e3335fd0adcfc0b0c97940b96042fa; NewUserCookie=x/0ZjgxwrC2CvM/xC1lDSHx6j0JZ30d337685+F+KOUlluh1GD0x/Ik9HsEkAxyMW1gDsWCom9wGnPowo1O7TpQavAo8KNVlxD+dfhPw5HCvODIMYEYS2TJ2JnoiFzf79bdj590XsN5MVlglyxiEXw==",
                  "origin": "https://www.tcpjw.com",
                 "referer": "https://www.tcpjw.com/OrderList/TradingCenter",
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36",

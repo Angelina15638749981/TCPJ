@@ -23,6 +23,13 @@ from selenium import webdriver
 import requests
 import os, time, random
 requests.packages.urllib3.disable_warnings()
+import urllib.request
+import cv2
+import numpy as np
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = 'D:/softwares/tesseract/tesseract.exe'
+import urllib.request
+import time
 
 # 时间
 nowTime = datetime.datetime.now().strftime('%Y_%m_%d')  # 现在
@@ -37,25 +44,157 @@ with open(r'%s_cookie.txt' % nowTime, 'r') as f:
     cookie = f.readline()
     print(cookie)
 
+# def save_pic():
+#     # 浏览器启动设置类
+#     optons = webdriver.ChromeOptions()
+#     # 浏览器启动配置
+#     prefs = {
+#         'profile.default_content_setting_values':
+#             {
+#                 'notifications': 2
+#             }
+#     }
+#     optons.add_argument('--headless')
+#     optons.add_argument('--disable-gpu')
+#     optons.add_experimental_option('prefs', prefs)
+#     optons.add_argument('disable-infobars')
+#     optons.add_experimental_option('excludeSwitches', ['enable-automation'])
+#     driver = webdriver.Chrome(executable_path=r'D:\softwares\chromedriver\chromedriver.exe', options=optons)
+#
+#     return driver
 
-def save_pic():
-    # 浏览器启动设置类
-    optons = webdriver.ChromeOptions()
-    # 浏览器启动配置
-    prefs = {
-        'profile.default_content_setting_values':
-            {
-                'notifications': 2
-            }
-    }
-    optons.add_argument('--headless')
-    optons.add_argument('--disable-gpu')
-    optons.add_experimental_option('prefs', prefs)
-    optons.add_argument('disable-infobars')
-    optons.add_experimental_option('excludeSwitches', ['enable-automation'])
-    driver = webdriver.Chrome(executable_path=r'D:\softwares\chromedriver\chromedriver.exe', options=optons)
 
-    return driver
+# def get_full_name(pic_link, item_person):
+#     urllib.request.urlretrieve(pic_link, '%s.png' % item_person)
+#     image = cv2.imread('%s.png' % item_person, 1)
+#
+#     #二值化
+#     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+#     binary = cv2.adaptiveThreshold(~gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 35, -5)
+#     cv2.waitKey(0)
+#
+#     rows, cols = binary.shape
+#     scale = 40
+#     #识别横线
+#     kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(cols//scale,1))
+#     eroded = cv2.erode(binary,kernel,iterations = 1)
+#     # cv2.imshow("Eroded Image",eroded)
+#     dilatedcol = cv2.dilate(eroded,kernel,iterations = 1)
+#
+#     #识别竖线
+#     scale = 20
+#     kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(1,rows//scale))
+#     eroded = cv2.erode(binary,kernel,iterations = 1)
+#     dilatedrow = cv2.dilate(eroded,kernel,iterations = 1)
+#
+#     #标识交点
+#     bitwiseAnd = cv2.bitwise_and(dilatedcol, dilatedrow)
+#
+#     #标识表格
+#     merge = cv2.add(dilatedcol,dilatedrow)
+#     cv2.waitKey(0)
+#
+#     #识别黑白图中的白色点
+#     ws,hs = np.where(bitwiseAnd>0)
+#     mylistw=[]
+#     mylisth=[]
+#
+#     #通过排序，获取跳变的x和y的值，说明是交点，否则交点会有好多像素值，我只取最后一点
+#     i = 0
+#     myxs=np.sort(hs)
+#     for i in range(len(myxs)-1):
+#         if(myxs[i+1]-myxs[i]>10):
+#             mylisth.append(myxs[i])
+#         i=i+1
+#     mylisth.append(myxs[i])
+#
+#
+#     i = 0
+#     myys = np.sort(ws)
+#
+#     for i in range(len(myys)-1):
+#         if(myys[i+1]-myys[i]>10):
+#             mylistw.append(myys[i])
+#         i=i+1
+#     mylistw.append(myys[i])
+#     # hhhhhhhhhhhhhhhhhhh
+#     print("----------H------------------")
+#     print(mylistw, len(mylistw))
+#     # wwwwwwwwwwwwwwwww
+#     print("----------W------------------")
+#     print(mylisth,len(mylisth))
+#
+#     # 银行承兑汇票情况1
+#     if len(mylistw) ==13 and len(mylisth) ==7:
+#
+#         ROI = image[mylistw[0]:mylistw[4], mylisth[0]:mylisth[-1]]
+#         # print(mylistw[0],mylistw[4], mylisth[0], mylisth[-1])
+#         # 账号 1
+#         account_num_1 = image[mylistw[0]:mylistw[1], mylisth[2]:mylisth[3]]
+#         # 全称1
+#         full_name_1 = image[mylistw[1]:mylistw[2], mylisth[2]:mylisth[3]]
+#         # 开户行1
+#         bank_name_1 = image[mylistw[2]:mylistw[3], mylisth[2]:mylisth[3]]
+#         # 开户行号1
+#         bank_name_num_1 = image[mylistw[3]:mylistw[4], mylisth[2]:mylisth[3]]
+#
+#         # 账号 2
+#         account_num_2 = image[mylistw[0]:mylistw[1], mylisth[5]:mylisth[6]]
+#         # 全称 2
+#         full_name_2 = image[mylistw[1]:mylistw[2], mylisth[5]:mylisth[6]]
+#         # 开户行 2
+#         bank_name_2 = image[mylistw[2]:mylistw[3], mylisth[5]:mylisth[6]]
+#         # 开户行号 2
+#         bank_name_num_2 = image[mylistw[3]:mylistw[4], mylisth[5]:mylisth[6]]
+#
+#         # 账号 1
+#         x, y = account_num_1.shape[0:2]
+#         account_num_1 = cv2.resize(account_num_1, (int(2 * y), int(2 * x)))
+#         # 全称1
+#         x, y = full_name_1.shape[0:2]
+#         full_name_1 = cv2.resize(full_name_1, (int(2 * y), int(2 * x)))
+#
+#         # 账号 2
+#         x, y = account_num_2.shape[0:2]
+#         account_num_2 = cv2.resize(account_num_2, (int(2 * y), int(2 * x)))
+#         # 全称2
+#         x, y = full_name_2.shape[0:2]
+#         full_name_2 = cv2.resize(full_name_2, (int(2 * y), int(2 * x)))
+#         # cv2.imshow("Cut Image", ROI)
+#
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_account_num_1.png' % item_person, account_num_1)
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_full_name_1.png' % item_person, full_name_1)
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_bank_name_1.png' % item_person, bank_name_1)
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_bank_name_num_1.png' % item_person, bank_name_num_1)
+#
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_account_num_2.png' % item_person, account_num_2)
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_full_name_2.png' % item_person, full_name_2)
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_bank_name_2.png' % item_person, bank_name_2)
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_bank_name_num_2.png' % item_person, bank_name_num_2)
+#
+#         cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s.png' % item_person, ROI, )
+#         cv2.waitKey(0)
+#
+#     else:
+#         account_num_1 = "无"
+#         full_name_1 = "无"
+#         account_num_2 = "无"
+#         full_name_2 = "无"
+#
+#
+#     # print("---------------------出票人信息------------------------------------------")
+#     account_num_1 = pytesseract.image_to_string(account_num_1, lang='chi_sim')  #读取文字，此为默认英文
+#     # print("账号1：%s" % account_num_1)
+#     full_name_1 = pytesseract.image_to_string(full_name_1, lang='chi_sim')  #读取文字，此为默认英文
+#     # print("全称1：%s" % full_name_1)
+#
+#     # print("---------------------收款人信息------------------------------------------")
+#     account_num_2 = pytesseract.image_to_string(account_num_2, lang='chi_sim')  #读取文字，此为默认英文
+#     # print("账号2：%s" % account_num_2)
+#     full_name_2 = pytesseract.image_to_string(full_name_2, lang='chi_sim')  #读取文字，此为默认英文
+#     # print("全称2：%s" % full_name_2)
+#
+#     return account_num_1,full_name_1,account_num_2,full_name_2
 
 
 def get_pic(tradeno, msw):
@@ -90,7 +229,10 @@ def get_pic(tradeno, msw):
         # print(Html)
         html = eval(Html)
         pic_link = html["t_face"]
-        print(pic_link)
+        pic_price = html["t_price"]
+        # print(pic_price)
+        #
+        # print(pic_link)
         # raise KeyError("'t_face")
         # raise SSLError("Unexpected EOF")
 
@@ -99,7 +241,7 @@ def get_pic(tradeno, msw):
     except(KeyError,IndexError,Exception) as e:
         print(e)
         # pass
-    return pic_link
+    return pic_link,pic_price
 
 
 def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
@@ -146,7 +288,8 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
         #
 
         for i in range(1, 16):
-            with open(r'E:\同城票据_票面信息\同城票据_接单中_票面信息_%s.txt' % nowTime, 'a+') as f:
+            # with open(r'E:\同城票据_票面信息\同城票据_接单中_票面信息_%s.txt' % nowTime, 'a+') as f:
+            with open('图片识别核对_%s.txt' % nowTime, 'a+') as f:
                 # 1 时间
                 item_time = html.xpath('//tr[%s]/td[1]' % i)[0].text.strip("\n")
                 time_pic_needed = str(item_time[-5])+str(item_time[-4])+str(item_time[-2])+str(item_time[-1])
@@ -227,10 +370,142 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
 
                 # time.sleep(1)
                 # 保存图片
-                pic_link = get_pic(tradeno_, interest_every_100_thousand_msw)
-                driver = save_pic()
-                driver.get(pic_link)
-                driver.save_screenshot(r"E:\同城票据_票面信息\%s\%s_%s_%s_%s_%s_%s_%s.png" % (nowTime, time_pic_needed, item_person, item_amount, days_to_expire_date, interest_every_100_thousand,annual_interest,defect_spot))
+                pic_link, pic_price = get_pic(tradeno_, interest_every_100_thousand_msw)
+                # print(pic_link)
+                # print(pic_price)
+                # account_num_1, full_name_1, account_num_2, full_name_2 = get_full_name(pic_link,item_person)
+
+
+
+                # 获取全称
+                # print("--------Test2---------------")
+                urllib.request.urlretrieve(pic_link, r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s.png' % i)
+                # print("--------Test1---------------")
+                time.sleep(3)
+                image = cv2.imread(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s.png' % i, 1)
+                # 二值化
+                gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+                binary = cv2.adaptiveThreshold(~gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 35, -5)
+                cv2.waitKey(0)
+                rows, cols = binary.shape
+                scale = 40
+                # 识别横线
+                kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (cols // scale, 1))
+                eroded = cv2.erode(binary, kernel, iterations=1)
+                # cv2.imshow("Eroded Image",eroded)
+                dilatedcol = cv2.dilate(eroded, kernel, iterations=1)
+                # 识别竖线
+                scale = 20
+                kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, rows // scale))
+                eroded = cv2.erode(binary, kernel, iterations=1)
+                dilatedrow = cv2.dilate(eroded, kernel, iterations=1)
+                # 标识交点
+                bitwiseAnd = cv2.bitwise_and(dilatedcol, dilatedrow)
+                # 标识表格
+                merge = cv2.add(dilatedcol, dilatedrow)
+                cv2.waitKey(0)
+                # 识别黑白图中的白色点
+                ws, hs = np.where(bitwiseAnd > 0)
+                mylistw = []
+                mylisth = []
+                # 通过排序，获取跳变的x和y的值，说明是交点，否则交点会有好多像素值，我只取最后一点
+                i = 0
+                myxs = np.sort(hs)
+                for i in range(len(myxs) - 1):
+                    if (myxs[i + 1] - myxs[i] > 10):
+                        mylisth.append(myxs[i])
+                    i = i + 1
+                mylisth.append(myxs[i])
+
+                i = 0
+                myys = np.sort(ws)
+
+                for i in range(len(myys) - 1):
+                    if (myys[i + 1] - myys[i] > 10):
+                        mylistw.append(myys[i])
+                    i = i + 1
+                mylistw.append(myys[i])
+                # hhhhhhhhhhhhhhhhhhh
+                print("----------H------------------")
+                print(mylistw, len(mylistw))
+                # wwwwwwwwwwwwwwwww
+                print("----------W------------------")
+                print(mylisth, len(mylisth))
+                # 银行承兑汇票情况1
+                if len(mylistw) == 13 and len(mylisth) == 7:
+                    ROI = image[mylistw[0]:mylistw[4], mylisth[0]:mylisth[-1]]
+                    # print(mylistw[0],mylistw[4], mylisth[0], mylisth[-1])
+                    # 账号 1
+                    account_num_1 = image[mylistw[0]:mylistw[1], mylisth[2]:mylisth[3]]
+                    # 全称1
+                    full_name_1 = image[mylistw[1]:mylistw[2], mylisth[2]:mylisth[3]]
+                    # 开户行1
+                    bank_name_1 = image[mylistw[2]:mylistw[3], mylisth[2]:mylisth[3]]
+                    # 开户行号1
+                    bank_name_num_1 = image[mylistw[3]:mylistw[4], mylisth[2]:mylisth[3]]
+
+                    # 账号 2
+                    account_num_2 = image[mylistw[0]:mylistw[1], mylisth[5]:mylisth[6]]
+                    # 全称 2
+                    full_name_2 = image[mylistw[1]:mylistw[2], mylisth[5]:mylisth[6]]
+                    # 开户行 2
+                    bank_name_2 = image[mylistw[2]:mylistw[3], mylisth[5]:mylisth[6]]
+                    # 开户行号 2
+                    bank_name_num_2 = image[mylistw[3]:mylistw[4], mylisth[5]:mylisth[6]]
+
+                    # 账号 1
+                    x, y = account_num_1.shape[0:2]
+                    account_num_1 = cv2.resize(account_num_1, (int(2 * y), int(2 * x)))
+                    # 全称1
+                    x, y = full_name_1.shape[0:2]
+                    full_name_1 = cv2.resize(full_name_1, (int(2 * y), int(2 * x)))
+
+                    # 账号 2
+                    x, y = account_num_2.shape[0:2]
+                    account_num_2 = cv2.resize(account_num_2, (int(2 * y), int(2 * x)))
+                    # 全称2
+                    x, y = full_name_2.shape[0:2]
+                    full_name_2 = cv2.resize(full_name_2, (int(2 * y), int(2 * x)))
+                    # cv2.imshow("Cut Image", ROI)
+
+                    cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_account_num_1.png' % i,
+                                account_num_1)
+                    cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_full_name_1.png' % i,
+                                full_name_1)
+                    cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_bank_name_1.png' % i,
+                                bank_name_1)
+                    cv2.imwrite(
+                        r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_bank_name_num_1.png' % i,
+                        bank_name_num_1)
+
+                    cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_account_num_2.png' % i,
+                                account_num_2)
+                    cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_full_name_2.png' % i,
+                                full_name_2)
+                    cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_bank_name_2.png' % i,
+                                bank_name_2)
+                    cv2.imwrite(
+                        r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s_bank_name_num_2.png' % i,
+                        bank_name_num_2)
+
+                    cv2.imwrite(r'C:\Users\admin\Desktop\TCPJW\certify_code\photos\%s.png' % i, ROI, )
+                    cv2.waitKey(0)
+
+                else:
+                    account_num_1 = "无"
+                    full_name_1 = "无"
+                    account_num_2 = "无"
+                    full_name_2 = "无"
+
+                account_num_1 = pytesseract.image_to_string(account_num_1, lang='chi_sim')  # 读取文字，此为默认英文
+                full_name_1 = pytesseract.image_to_string(full_name_1, lang='chi_sim')  # 读取文字，此为默认英文
+                account_num_2 = pytesseract.image_to_string(account_num_2, lang='chi_sim')  # 读取文字，此为默认英文
+                full_name_2 = pytesseract.image_to_string(full_name_2, lang='chi_sim')  # 读取文字，此为默认英文
+
+                # urllib.request.urlretrieve(pic_link, r"E:\同城票据_票面信息\%s\%s_%s_%s_%s_%s_%s_%s.png" % (nowTime, time_pic_needed, item_person, item_amount, days_to_expire_date, interest_every_100_thousand,annual_interest,defect_spot))
+                # driver = save_pic()
+                # driver.get(pic_link)
+                # driver.save_screenshot(r"E:\同城票据_票面信息\%s\%s_%s_%s_%s_%s_%s_%s.png" % (nowTime, time_pic_needed, item_person, item_amount, days_to_expire_date, interest_every_100_thousand,annual_interest,defect_spot))
 
 
 
@@ -246,26 +521,21 @@ def get_data_from_tcpj(pt_keywords, pt_tradestatus, pt_bid, pageIdx_client):
                 # get_pic参数信息
                 print("订单号是: %s" % tradeno_)
                 print("传的参数msw为: %s" % interest_every_100_thousand_msw)
-                #jdclick(90619173010690,1, 350.00 00)
-                #jdclick(90620093724103,1, 1775.00 00)
-                #jdclick(90620093740098,1, 13450.00 00)
-                #jdclick(90620093692214,1,1570.0000)
-                #jdclick(90620093389009,1,1700.0000)
-                #jdclick(90620085746237,1,14916.6700)
+                print("图片链接： %s" % pic_link)
+                print("票据金额： %s" % pic_price)
+                print("账号1：%s" % account_num_1)
+                print("全称1：%s" % full_name_1)
+                print("账号2：%s" % account_num_2)
+                print("全称2：%s" % full_name_2)
 
-                # print(interest_every_100_thousand_with_4_[0])
-                # print(str(interest_every_100_thousand_with_4_[0][25:-3]))
-                # print(str(interest_every_100_thousand_with_4_[0][25:-1])[-4:])
-
-
-                f.write(
-                    item_time + ',' + item_person + ',' + item_amount + ',' + expire_date + ',' +
-                    interest_every_100_thousand + ',' + annual_interest + ',' + defect_spot + ',' +tradeno_+ ',' + pic_link + "\n")
+                f.write(account_num_1 + ',' + full_name_1 + ',' + account_num_2 + ',' + full_name_2+ ',' + pic_price +  ',' +pic_link+"\n")
+                # f.write(
+                #     item_time + ',' + item_person + ',' + item_amount + ',' + expire_date + ',' +
+                #     interest_every_100_thousand + ',' + annual_interest + ',' + defect_spot + ',' +tradeno_+ ',' + pic_link + "\n")
     # UnboundLocalError: local variable 'pic_link' referenced before assignment
     except (IndexError, UnboundLocalError, Exception) as e:
         # raise e
         print(e)
-        # pass
 
 
 
@@ -279,11 +549,11 @@ if __name__ == '__main__':
     col = db.data
 
     while True:
-        for pageIdx_client in range(1, 4):
+        for pageIdx_client in range(1, 6):
             # pt_keywords,pt_tradestatus, pt_bid, pageIdx_client
             print("--------------------爬取第%s页数据-----------------------------------------------------------" % pageIdx_client)
             get_data_from_tcpj("", "00", "", pageIdx_client,)
-            time.sleep(2)
+            time.sleep(3)
 
 
 #13213242228

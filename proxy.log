@@ -1,0 +1,1496 @@
+INFO:root:open_url||{ "code": 100, "left_ip": 1000, "left_time": 2591775, "number": 20, "domain": "183.129.244.16", "port": [ 28136, 11102, 21238, 28208, 19397, 18915, 24670, 26960, 26114, 29897, 17238, 13529, 19948, 30071, 18068, 29346, 25815, 30216, 15084, 15093 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 980, "left_time": 2591774, "number": 20, "domain": "183.129.244.16", "port": [ 26875, 11776, 16804, 16117, 11402, 15349, 23588, 15724, 15455, 23151, 13763, 28082, 17251, 28130, 11524, 14587, 11598, 25854, 27576, 26959 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 960, "left_time": 2591774, "number": 20, "domain": "183.129.244.16", "port": [ 29320, 13301, 16001, 17246, 28422, 19284, 26859, 24371, 18115, 11342, 28686, 27678, 17253, 27239, 30360, 17172, 24920, 17408, 15403, 14906 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 940, "left_time": 2591773, "number": 20, "domain": "183.129.244.16", "port": [ 19811, 25483, 21377, 14220, 18272, 18102, 19200, 16247, 20169, 11910, 18862, 30027, 20098, 28588, 26102, 19785, 14425, 15338, 17601, 28087 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 920, "left_time": 2591772, "number": 20, "domain": "183.129.244.16", "port": [ 17234, 30625, 27066, 29690, 18143, 15448, 20803, 17734, 17381, 17406, 21317, 11859, 25373, 17485, 29100, 18806, 14725, 29177, 19432, 22526 ] }
+INFO:root:proxy||200
+INFO:root:open_url||{ "code": 100, "left_ip": 900, "left_time": 2591727, "number": 20, "domain": "183.129.244.16", "port": [ 30401, 29681, 32537, 20478, 25298, 22525, 32574, 20694, 30105, 25777, 21357, 28894, 15378, 22166, 23325, 32757, 14349, 18260, 13580, 26338 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 880, "left_time": 2591726, "number": 20, "domain": "183.129.244.16", "port": [ 21963, 32604, 32599, 27102, 16736, 19580, 27724, 13081, 16195, 23992, 20000, 27677, 22890, 25635, 30378, 29201, 20237, 12018, 29443, 23779 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 860, "left_time": 2591726, "number": 20, "domain": "183.129.244.16", "port": [ 27341, 21122, 15808, 11824, 14839, 11618, 14259, 16361, 11082, 22985, 25924, 19160, 30246, 29086, 28420, 14678, 26389, 12258, 23061, 22931 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 840, "left_time": 2591724, "number": 20, "domain": "183.129.244.16", "port": [ 32655, 28457, 28832, 31919, 26107, 11645, 16732, 22617, 18445, 29220, 15153, 14373, 16722, 16939, 23288, 27940, 17855, 25732, 21004, 17008 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 820, "left_time": 2591723, "number": 20, "domain": "183.129.244.16", "port": [ 27551, 28318, 18967, 14019, 11259, 12440, 11401, 20246, 11468, 26203, 26942, 29011, 15424, 20141, 15778, 32223, 26359, 32228, 32254, 32240 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 800, "left_time": 2591722, "number": 20, "domain": "183.129.244.16", "port": [ 19127, 20292, 12031, 19466, 16714, 14556, 23884, 23441, 32119, 23900, 20497, 13496, 21787, 24642, 23517, 30120, 29795, 19241, 12077, 28452 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 780, "left_time": 2591722, "number": 20, "domain": "183.129.244.16", "port": [ 13359, 29299, 18653, 14842, 19995, 12760, 17700, 27982, 20448, 25604, 25377, 25117, 16967, 27955, 25135, 16988, 12092, 13035, 24878, 29607 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 760, "left_time": 2591721, "number": 20, "domain": "183.129.244.16", "port": [ 24311, 30041, 19155, 29854, 25573, 29058, 12173, 24258, 18950, 20504, 24533, 12286, 24625, 23430, 30546, 21118, 20470, 11281, 11294, 16098 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 740, "left_time": 2591720, "number": 20, "domain": "183.129.244.16", "port": [ 30759, 30754, 20780, 15400, 13409, 21780, 13296, 16209, 16933, 13938, 13017, 21475, 18678, 15176, 16067, 11399, 29624, 28068, 28712, 15369 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 720, "left_time": 2591720, "number": 20, "domain": "183.129.244.16", "port": [ 27538, 29596, 16563, 32795, 26695, 32796, 26664, 14372, 26201, 21798, 25215, 26462, 12147, 18341, 20719, 27844, 14553, 29464, 24447, 14015 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 700, "left_time": 2591719, "number": 20, "domain": "183.129.244.16", "port": [ 11793, 26141, 13349, 16726, 12577, 13823, 13759, 30325, 22582, 25347, 21654, 25016, 13576, 28018, 32753, 23567, 27903, 27367, 15018, 18671 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 680, "left_time": 2591718, "number": 20, "domain": "183.129.244.16", "port": [ 31120, 31220, 31168, 31226, 31239, 31246, 31234, 31254, 31125, 31128, 31140, 31215, 31217, 31170, 31195, 31192, 31198, 31207, 27574, 24487 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 660, "left_time": 2591717, "number": 20, "domain": "183.129.244.16", "port": [ 30932, 21748, 11789, 17279, 28481, 13697, 16378, 19076, 27139, 16484, 20351, 18795, 12776, 12191, 20568, 32080, 30351, 21039, 16625, 24054 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 640, "left_time": 2591717, "number": 20, "domain": "183.129.244.16", "port": [ 21847, 19111, 26927, 15670, 24900, 27504, 27168, 14554, 29355, 18602, 30160, 21539, 22430, 17293, 25115, 30967, 11331, 18298, 25443, 19531 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 620, "left_time": 2591715, "number": 20, "domain": "183.129.244.16", "port": [ 21205, 30359, 32970, 27789, 17030, 15587, 27131, 26905, 14523, 26396, 28320, 17797, 33006, 23551, 20303, 26298, 17910, 29776, 22530, 32275 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 600, "left_time": 2591715, "number": 20, "domain": "183.129.244.16", "port": [ 17802, 29432, 16311, 29855, 19823, 14280, 11671, 17066, 15838, 25751, 19971, 26106, 29956, 18308, 19736, 12188, 25675, 16710, 21083, 11203 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 580, "left_time": 2591714, "number": 20, "domain": "183.129.244.16", "port": [ 16713, 17505, 18275, 27194, 21447, 21522, 31110, 11116, 13828, 14949, 12515, 20582, 19215, 20793, 17811, 25111, 25439, 28759, 15879, 23294 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 560, "left_time": 2591713, "number": 20, "domain": "183.129.244.16", "port": [ 27209, 12346, 29764, 24840, 18813, 13179, 28696, 19201, 26418, 15745, 28044, 28923, 12205, 16045, 20209, 15121, 24355, 11394, 30226, 26351 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 540, "left_time": 2591712, "number": 20, "domain": "183.129.244.16", "port": [ 32258, 20372, 32201, 30603, 32167, 30473, 20300, 13420, 19150, 21813, 12369, 12333, 12323, 20258, 28643, 28586, 26108, 16177, 21720, 14679 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 520, "left_time": 2591712, "number": 20, "domain": "183.129.244.16", "port": [ 22461, 12079, 24313, 18755, 15060, 29271, 11121, 13262, 30175, 26159, 31969, 12632, 23162, 11238, 22745, 24553, 19947, 12123, 24513, 26662 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 500, "left_time": 2591711, "number": 20, "domain": "183.129.244.16", "port": [ 16679, 17338, 14253, 13521, 28873, 14318, 28221, 17016, 16114, 17190, 27263, 29588, 29368, 21509, 21418, 18408, 23273, 21883, 26243, 13019 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 480, "left_time": 2591711, "number": 20, "domain": "183.129.244.16", "port": [ 25572, 25789, 17184, 27456, 25772, 16015, 15588, 25960, 25095, 16473, 19715, 16627, 17712, 28627, 13643, 13998, 30215, 21017, 26877, 16286 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 460, "left_time": 2591709, "number": 20, "domain": "183.129.244.16", "port": [ 21716, 20029, 23917, 27835, 11291, 14727, 28421, 22997, 23452, 23928, 22951, 15272, 32514, 32694, 32695, 22471, 15383, 28985, 30617, 16964 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 440, "left_time": 2591709, "number": 20, "domain": "183.129.244.16", "port": [ 14757, 28705, 28167, 16694, 13830, 29007, 16880, 17630, 23291, 17260, 32213, 19833, 29312, 30249, 32752, 11077, 13920, 29361, 22383, 32357 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 420, "left_time": 2591708, "number": 20, "domain": "183.129.244.16", "port": [ 32321, 22041, 22505, 11269, 15413, 23973, 11306, 16761, 29095, 24438, 26174, 17440, 21494, 28815, 23966, 28409, 27715, 13930, 22056, 25665 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 400, "left_time": 2591707, "number": 20, "domain": "183.129.244.16", "port": [ 27527, 31681, 17796, 31579, 31873, 32036, 19184, 31700, 31680, 32062, 32065, 31727, 31703, 29527, 32382, 12563, 14426, 32336, 12489, 28123 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 380, "left_time": 2591706, "number": 20, "domain": "183.129.244.16", "port": [ 17042, 22894, 28951, 25478, 26773, 15067, 29421, 25203, 24828, 24988, 11664, 11547, 23420, 21263, 17633, 21290, 24982, 25672, 11651, 29769 ] }
+INFO:root:open_url||{ "code": 100, "left_ip": 360, "left_time": 2591364, "number": 20, "domain": "183.129.244.16", "port": [ 31486, 23903, 18362, 19086, 20442, 18674, 23414, 13494, 20212, 21051, 17123, 14632, 28163, 19118, 24522, 23623, 12477, 23142, 17499, 27355 ] }
+INFO:root:open_url||{ "code": 100, "left_ip": 340, "left_time": 2591194, "number": 20, "domain": "183.129.244.16", "port": [ 14625, 17984, 20727, 22807, 11816, 13398, 12621, 27357, 20322, 29035, 12880, 24198, 22273, 11175, 21547, 18036, 18810, 13402, 29255, 26626 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 320, "left_time": 2591193, "number": 20, "domain": "183.129.244.16", "port": [ 29397, 24827, 11592, 12675, 14608, 13120, 11343, 15878, 29009, 15291, 21616, 14030, 31155, 11448, 31143, 24089, 15259, 30963, 29504, 26152 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 300, "left_time": 2591192, "number": 20, "domain": "183.129.244.16", "port": [ 29132, 12447, 32797, 12496, 33087, 18523, 32814, 32713, 15331, 32751, 32798, 29091, 26782, 30832, 32683, 33112, 29430, 26056, 27306, 24094 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 280, "left_time": 2591192, "number": 20, "domain": "183.129.244.16", "port": [ 19781, 22409, 11298, 20319, 11309, 29393, 26354, 16084, 22324, 13852, 24136, 28695, 12955, 32379, 12872, 12430, 28904, 25983, 20061, 24385 ] }
+INFO:root:open_url||{ "code": 100, "left_ip": 260, "left_time": 2590871, "number": 20, "domain": "183.129.244.16", "port": [ 33102, 33084, 33091, 12855, 13401, 20505, 23253, 24585, 24158, 19045, 12929, 25978, 21719, 14767, 32428, 32344, 20438, 27149, 29898, 32391 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 240, "left_time": 2590869, "number": 20, "domain": "183.129.244.16", "port": [ 18626, 19243, 14961, 32938, 18325, 32410, 19600, 13359, 32562, 32566, 25238, 16824, 17478, 19821, 26468, 16437, 25186, 30574, 18019, 23179 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 220, "left_time": 2590868, "number": 20, "domain": "183.129.244.16", "port": [ 20596, 13527, 29495, 24872, 18620, 19497, 17791, 14093, 29625, 13788, 21934, 22903, 14329, 23775, 26815, 30029, 28758, 22914, 29972, 29245 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 200, "left_time": 2590866, "number": 20, "domain": "183.129.244.16", "port": [ 27676, 14688, 25201, 15624, 28351, 23425, 18442, 21890, 25781, 19841, 23865, 27175, 18026, 26855, 19687, 18281, 26226, 19572, 22240, 12991 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 180, "left_time": 2590866, "number": 20, "domain": "183.129.244.16", "port": [ 22857, 19029, 31685, 30589, 15010, 17049, 24343, 15828, 30456, 15499, 28822, 23800, 20151, 13337, 24730, 17759, 11413, 28532, 24046, 29796 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 160, "left_time": 2590865, "number": 20, "domain": "183.129.244.16", "port": [ 31416, 26259, 12336, 12593, 26675, 12509, 25936, 20002, 31216, 17176, 31214, 31135, 31203, 31136, 31427, 31126, 31103, 25316, 31095, 27385 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 140, "left_time": 2590864, "number": 20, "domain": "183.129.244.16", "port": [ 16106, 31450, 24173, 16774, 21391, 17437, 30442, 11927, 20071, 23592, 12585, 20864, 16949, 15382, 14774, 11934, 16805, 26130, 14982, 30527 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 120, "left_time": 2590863, "number": 20, "domain": "183.129.244.16", "port": [ 20350, 17281, 15744, 11074, 16332, 17155, 22546, 13888, 24153, 17214, 20583, 22157, 24757, 28811, 15751, 15154, 28459, 25313, 18313, 25634 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 100, "left_time": 2590862, "number": 20, "domain": "183.129.244.16", "port": [ 15874, 24764, 29664, 16210, 11021, 21916, 26101, 33134, 19245, 14246, 30056, 18649, 21641, 16238, 11163, 29425, 33166, 29377, 18511, 16905 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 80, "left_time": 2590862, "number": 20, "domain": "183.129.244.16", "port": [ 27999, 18446, 20086, 11666, 18199, 18114, 24712, 16303, 18560, 17539, 26117, 17297, 28368, 23330, 15921, 28067, 17178, 17097, 12226, 14838 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 60, "left_time": 2590861, "number": 20, "domain": "183.129.244.16", "port": [ 11457, 15675, 14347, 15200, 13059, 15243, 27311, 26088, 24689, 18732, 22633, 18154, 29542, 27990, 21629, 26327, 17870, 25726, 17934, 23389 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 100, "left_ip": 40, "left_time": 2590860, "number": 20, "domain": "183.129.244.16", "port": [ 32076, 29008, 23015, 15794, 18714, 11463, 22940, 24107, 17349, 23157, 28533, 21588, 16717, 13991, 19554, 28224, 16498, 11143, 19542, 28958 ] }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 100 }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='127.0.0.1', port=8888): Read timed out. (read timeout=3)"))
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='127.0.0.1', port=8888): Read timed out. (read timeout=3)"))
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='127.0.0.1', port=8888): Read timed out. (read timeout=3)"))
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||200
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /close?user_name=syf11140725ap1&timestamp=1567072052968&md5=613720f5eedd1eb5c6bc449f41203f81&pattern=json&port= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C619E8>: Failed to establish a new connection: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053868&md5=65e9ec0b898d1a502b4567d0f1e2f12c&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C938D0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053872&md5=c8258adc5530765021a915e8f9194342&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93F98>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053874&md5=a324636fb5b2d6f9875afb90bc3c9543&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA26A0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053886&md5=60a610e9bb45fa018cefb40eadc50f6a&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93FD0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053888&md5=e80faa5c544633c9aea7b77b6d637514&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C933C8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053892&md5=ba819ee255dda81d93e14fc54f731067&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C61908>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053893&md5=77d11dad22295ebe447f106fc0267e9a&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C61EB8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053896&md5=92bc91465a50c6ba1534d21949fc28e2&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2208>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053897&md5=3c5addc80dbff1ab99cf7347b98bfe32&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB3160>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053899&md5=ac60ce30fb41640039dfd479df6fb8fa&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB3828>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053900&md5=f66f008808676d00a4776e4a66a98639&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C61748>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053912&md5=9d295581b5fafb922ce448089b3a4fa6&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2BE0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053924&md5=38964b7013d4c301d034c40545da231d&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2400>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053935&md5=86263050d2ff724594b8e2fb9734c421&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2A20>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053947&md5=0ce5e735162c451c03528b4b6d85cb4a&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93080>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053959&md5=b918c7ed40d377f9870802c2a3ae06a9&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93EB8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053971&md5=575352962f9f36ec9d81b1d7505de38b&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB3128>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053983&md5=05fefe70cc741820bddc010212c0ce5c&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93DA0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072053995&md5=d14446f106dd893ee07d91dbf3c0983d&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93710>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054006&md5=cc2785d2a1712668fcac56265151afa1&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2978>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054017&md5=4232beef1fcf5353bf42f31c55b61a53&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2048>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054028&md5=707ba625251bee91d0b5929fcae9af96&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C619E8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054040&md5=2d8f67414e3b1d568548ebc8a5efa8fa&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C4E198>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054051&md5=04e639d236acb89dcad39ab0f8bef9bb&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB3518>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054052&md5=32eb408c7e9dec071448d70716cdc328&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C4E208>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054053&md5=4c3dc58b552fe04cecb8b8b42fef7a2e&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C61D68>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054065&md5=75c851b71f39dc9a667b0b832f3ba8fb&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA22B0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054077&md5=9c48fda47b5d7e0ca55ecc3955fa21ce&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA27B8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054089&md5=4fe7dc481f821f4230671450619f4b07&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB37F0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054100&md5=52e7abd9fdf9a18323c926be235a7647&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB30B8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054111&md5=9047ce75c833983cc267144b37942d80&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93B70>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054123&md5=d8df5dcf035d86b33f3774a58e9db62e&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93E48>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054135&md5=096f449cbc679e309c6557a6bc1c7443&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA27F0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054146&md5=bc68ceafb5cdc23cf9e76a64607ef775&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2F28>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054158&md5=84c4f0c7b17655e2b0f53adef7543f43&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C61860>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054169&md5=28fb3dcec32fbab3d57f3f3e24415844&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB3E80>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054180&md5=aed7cd9b5ce7e77b09f4f73451e492d2&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB39E8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054192&md5=f2972aef2f6746048a63761ee13c494e&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C93BE0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054204&md5=b5ecfa5a9b55257002e1ff3c4f7bb9d4&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CBE0F0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054216&md5=e805243c4eb60a63c314c6df0d95e571&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB32E8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054228&md5=246d5a4c5c8f7ca257fc07bfe4a6977f&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB3390>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054241&md5=0b1a6161e24a433922da23340b462764&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C619E8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054253&md5=8fba4e336322b35e88682c9f876e3650&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2470>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054265&md5=47661b01bbaf80e21a57e0b7e7264df7&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2B00>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054277&md5=17199f723598190b99eab26070194472&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CBE240>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054289&md5=58e2c4fc12034200eb1fe6e34061a8e8&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CBE908>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054300&md5=0604bce8ef1ea7a5b97399ccab5aa268&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2898>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054312&md5=05407c677e44e377ab3fd39f9bf73c94&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA24E0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054324&md5=10e3039eaed93f53077c4b52db4b8072&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C61DA0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054335&md5=9c5e1dbd52f0cec9ca029fa89122d22d&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CBE860>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054347&md5=49840f682554b946ca7584a243c1863a&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CBEEF0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054359&md5=22741cfde5ddc600cb2787c3f2b44bf4&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB25F8>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054371&md5=b54672fd95dad09726f11700614feaa0&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB2CC0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054383&md5=0678ce189116973f3fc9fb40d0d87703&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8C61C18>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054394&md5=e8f963cd999e44b5aaac6f972f04cdf0&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2128>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054405&md5=2aa2aac31b82c91a57bc3d07ff90c38a&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA20F0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054417&md5=d7489d455337cc77412255ad7482506f&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CBEE80>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054429&md5=d329ef1c43c13ef062176502089bd049&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CBE6A0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054441&md5=6081ff11af45d795038eabd3dcd64145&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB2C50>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054453&md5=d2695a6d03c6e74910527bcf6eaa177d&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CB2E48>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054465&md5=b3b142bc46c73d0b0d3f191cf6244dae&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CBEDA0>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054476&md5=7ed30626072c8ebb8fb933aef0572e9f&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2780>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectionError(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054488&md5=266a9bbfcb060ea88bbc06d90b65daf6&pattern=json&number=20 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2F28>: Failed to establish a new connection: [WinError 10051] 向一个无法连接的网络尝试了一个套接字操作。'))"))
+INFO:root:open_url||ConnectTimeout(MaxRetryError("HTTPConnectionPool(host='183.129.244.16', port=88): Max retries exceeded with url: /open?user_name=syf11140725ap1&timestamp=1567072054489&md5=b367cfc86a1729208c26f518a9fb0d49&pattern=json&number=20 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000022CA8CA2E80>, 'Connection to 183.129.244.16 timed out. (connect timeout=3)'))"))
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))
+INFO:root:close_url||{ "code": 102, "value": "url格式错误" }
+INFO:root:open_url||{ "code": 118, "value": "ip用完，请续费" }
+INFO:root:proxy||ProxyError(MaxRetryError("HTTPSConnectionPool(host='www.tcpjw.com', port=443): Max retries exceeded with url: /OrderList/TradingCenter (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 400 Bad Request')))"))

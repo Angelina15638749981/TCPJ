@@ -95,6 +95,8 @@ def crack():
     #                     band_type = "国股"
     #                     judgement_basis = bank
     #
+
+
     #             # 大商
     #             bank_belongto_dashang_list = ["浙商", "渤海", "宁波", "江苏", "北京", "上海", "南京"]
     #             for bank in bank_belongto_dashang_list:
@@ -102,6 +104,7 @@ def crack():
     #                     band_type = "大商"
     #                     judgement_basis = bank
     #
+
     #             # 三农
     #             bank_belongto_sannong_list = ["农村", "农商"]
     #             for bank in bank_belongto_sannong_list:

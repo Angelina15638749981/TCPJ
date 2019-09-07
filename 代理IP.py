@@ -32,10 +32,9 @@ auth = "sign=" + sign + "&" + "orderno=" + orderno + "&" + "timestamp=" + timest
 print(auth)
 proxy = {"http": "http://" + ip_port, "https": "https://" + ip_port}
 headers = {"Proxy-Authorization": auth}
-r = requests.get("https://www.tcpjw.com/OrderList/TradingCenter?pt_bid=1", headers=headers, proxies=proxy, verify=False,allow_redirects=False)
+r = requests.get("https://www.tcpjw.com/OrderList/TradingCenter?pt_bid=1", proxies=proxy, verify=False, allow_redirects=False)
 print(r.status_code)
 print(r.text)
-print(r.status_code)
 # if r.status_code == 302 or r.status_code == 301 :
 #     loc = r.headers['Location']
 #     url_f = "https://www.tianyancha.com" + loc
