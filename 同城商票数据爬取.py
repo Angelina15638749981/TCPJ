@@ -49,7 +49,7 @@ def company_search(chinaCompan):
     print(response.status_code)
     response.encoding = "utf-8"
     Html = response.text
-    print(Html)
+    # print(Html)
     html = etree.HTML(Html)
 
 
@@ -235,7 +235,7 @@ def get_guogu_data(pt_tradestatus, pt_bid, pageIdx_client):
                 # 写入文件
                 # f.write(
                 #     item_time + ',' + item_person + ',' + item_amount + ',' + expire_date + ',' +
-                #     interest_every_100_thousand + ',' + annual_interest + ',' + defect_spot + ',' + order_state + ',' +stockholder+ ',' +stock_ratio+"\n")
+                #     interest_every_100_thousand + ',' + annual_interest + ',' + defect_spot + ',' + order_state + ',' +stockholder+ ',' +stock_ratio)
                 f.write(
                     item_time + ',' + item_person + ',' + item_amount + ',' + expire_date + ',' +
                     interest_every_100_thousand + ',' + annual_interest + ',' + defect_spot + ',' + order_state + "\n")
