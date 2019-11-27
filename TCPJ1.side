@@ -1,0 +1,96 @@
+{
+  "id": "447ad3e0-4bc5-4214-b56b-58399938e4e8",
+  "version": "2.0",
+  "name": "TCPJ",
+  "url": "https://www.tcpjw.com",
+  "tests": [{
+    "id": "9c1d721f-50ee-49ee-83ef-f0414f7dcd93",
+    "name": "Untitled",
+    "commands": [{
+      "id": "211ff54d-41dd-4e09-9ab8-09da0310d656",
+      "comment": "",
+      "command": "open",
+      "target": "/B2BHall",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1afa0f24-ba2f-4d88-b9f8-6180df7c5449",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1038",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19636690-645f-4301-8fbd-1bb45cb844a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tr:nth-child(2) .button-margin:nth-child(2) > span:nth-child(2)",
+      "targets": [
+        ["css=.tr:nth-child(2) .button-margin:nth-child(2) > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[4]/div[2]/div[2]/div/label[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//label[2]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'待接单')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d97f1e7f-fcf3-425c-8f51-e4b3e76b4660",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tr:nth-child(4) .ant-input",
+      "targets": [
+        ["css=.tr:nth-child(4) .ant-input", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5c84071-1f23-4e8c-b33f-78579b9f8ba7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.tr:nth-child(4) .ant-input",
+      "targets": [
+        ["css=.tr:nth-child(4) .ant-input", "css:finder"],
+        ["xpath=//input[@value='中国银行']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "中国银行"
+    }, {
+      "id": "0a2f08d4-ac27-4330-87d9-51795b9574a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-sm:nth-child(1)",
+      "targets": [
+        ["css=.ant-btn-sm:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/div[4]/div[2]/span/button", "xpath:idRelative"],
+        ["xpath=//div[2]/span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'搜 索')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42306c20-7e2c-4c32-ab84-fa5130010c60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-table-row:nth-child(2) .ant-btn",
+      "targets": [
+        ["css=.ant-table-row:nth-child(2) .ant-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[12]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[5]/div[2]/div/div/div/div/div/table/tbody/tr[2]/td[10]/span/button", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[10]/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5fd7038a-aa4d-42f7-8c1d-081e48bca852",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9c1d721f-50ee-49ee-83ef-f0414f7dcd93"]
+  }],
+  "urls": ["https://www.tcpjw.com/"],
+  "plugins": []
+}
